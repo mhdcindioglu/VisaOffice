@@ -1,0 +1,166 @@
+@using Microsoft.Extensions.Localization
+@{
+    ViewData["Title"] = Resources.About;
+}
+
+<div class="container py-5">    <!-- Page Header -->
+    <div class="text-center mb-5">
+        <h1 class="display-4 fw-bold">@Resources.AboutUsTitle</h1>
+        <p class="lead text-muted">@Resources.AboutDescription</p>
+    </div>
+
+    <!-- Company Overview -->
+    <div class="row align-items-center mb-5">
+        <div class="col-lg-6">
+            <h2 class="fw-bold mb-4">Leading Visa Consultancy</h2>
+            <p class="mb-4">With over 15 years of experience in the visa and immigration industry, Visa Office Pro has helped thousands of clients achieve their travel and immigration goals. We pride ourselves on providing professional, efficient, and personalized services.</p>
+            <p class="mb-4">Our team of certified immigration consultants and legal experts work tirelessly to ensure your application is processed smoothly and successfully. We stay updated with the latest immigration laws and regulations to provide you with accurate guidance.</p>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="d-flex align-items-center mb-3">
+                        <i class="fas fa-check-circle text-success me-3"></i>
+                        <span>15+ Years Experience</span>
+                    </div>
+                    <div class="d-flex align-items-center mb-3">
+                        <i class="fas fa-check-circle text-success me-3"></i>
+                        <span>95% Success Rate</span>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="d-flex align-items-center mb-3">
+                        <i class="fas fa-check-circle text-success me-3"></i>
+                        <span>10,000+ Happy Clients</span>
+                    </div>
+                    <div class="d-flex align-items-center mb-3">
+                        <i class="fas fa-check-circle text-success me-3"></i>
+                        <span>50+ Countries Served</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 text-center">
+            <img src="https://via.placeholder.com/500x400/007bff/ffffff?text=Professional+Team" class="img-fluid rounded shadow" alt="Professional Team">
+        </div>
+    </div>
+
+    <!-- Mission & Vision -->
+    <div class="row mb-5">
+        <div class="col-md-6">
+            <div class="card h-100 border-0 shadow-sm">
+                <div class="card-body p-4">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-bullseye text-primary" style="font-size: 3rem;"></i>
+                    </div>
+                    <h4 class="card-title text-center fw-bold">Our Mission</h4>
+                    <p class="card-text text-center">To provide comprehensive, reliable, and efficient visa and immigration services that help our clients achieve their international travel and residency goals with confidence and peace of mind.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card h-100 border-0 shadow-sm">
+                <div class="card-body p-4">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-eye text-primary" style="font-size: 3rem;"></i>
+                    </div>
+                    <h4 class="card-title text-center fw-bold">Our Vision</h4>
+                    <p class="card-text text-center">To be the leading visa consultancy service globally, recognized for our expertise, integrity, and commitment to helping people connect across borders and achieve their dreams.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Core Values -->
+    <div class="mb-5">
+        <h2 class="text-center fw-bold mb-5">Our Core Values</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="text-center">
+                    <i class="fas fa-handshake text-primary mb-3" style="font-size: 2.5rem;"></i>
+                    <h5 class="fw-bold">Integrity</h5>
+                    <p class="text-muted">We maintain the highest ethical standards in all our dealings, ensuring transparency and honesty with every client.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="text-center">
+                    <i class="fas fa-star text-primary mb-3" style="font-size: 2.5rem;"></i>
+                    <h5 class="fw-bold">Excellence</h5>
+                    <p class="text-muted">We strive for excellence in every service we provide, continuously improving our processes and expertise.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="text-center">
+                    <i class="fas fa-users text-primary mb-3" style="font-size: 2.5rem;"></i>
+                    <h5 class="fw-bold">Client Focus</h5>
+                    <p class="text-muted">Our clients are at the heart of everything we do. We provide personalized attention and support throughout the process.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Why Choose Us -->
+    <div class="bg-light p-5 rounded mb-5">
+        <h2 class="text-center fw-bold mb-5">Why Choose Visa Office Pro?</h2>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="d-flex mb-4">
+                    <i class="fas fa-graduation-cap text-primary me-3 mt-1" style="font-size: 1.5rem;"></i>
+                    <div>
+                        <h5 class="fw-bold">Expert Team</h5>
+                        <p class="text-muted mb-0">Our team consists of certified immigration consultants, lawyers, and visa specialists with extensive experience.</p>
+                    </div>
+                </div>
+                <div class="d-flex mb-4">
+                    <i class="fas fa-clock text-primary me-3 mt-1" style="font-size: 1.5rem;"></i>
+                    <div>
+                        <h5 class="fw-bold">Fast Processing</h5>
+                        <p class="text-muted mb-0">We prioritize efficiency without compromising accuracy, offering express services for urgent applications.</p>
+                    </div>
+                </div>
+                <div class="d-flex mb-4">
+                    <i class="fas fa-phone text-primary me-3 mt-1" style="font-size: 1.5rem;"></i>
+                    <div>
+                        <h5 class="fw-bold">24/7 Support</h5>
+                        <p class="text-muted mb-0">Our dedicated support team is available around the clock to assist you with any queries or concerns.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="d-flex mb-4">
+                    <i class="fas fa-shield-alt text-primary me-3 mt-1" style="font-size: 1.5rem;"></i>
+                    <div>
+                        <h5 class="fw-bold">Secure & Confidential</h5>
+                        <p class="text-muted mb-0">We ensure the highest level of security and confidentiality for all your personal information and documents.</p>
+                    </div>
+                </div>
+                <div class="d-flex mb-4">
+                    <i class="fas fa-dollar-sign text-primary me-3 mt-1" style="font-size: 1.5rem;"></i>
+                    <div>
+                        <h5 class="fw-bold">Competitive Pricing</h5>
+                        <p class="text-muted mb-0">We offer transparent and competitive pricing with no hidden fees, providing excellent value for money.</p>
+                    </div>
+                </div>
+                <div class="d-flex mb-4">
+                    <i class="fas fa-globe text-primary me-3 mt-1" style="font-size: 1.5rem;"></i>
+                    <div>
+                        <h5 class="fw-bold">Global Reach</h5>
+                        <p class="text-muted mb-0">We handle visa applications for destinations worldwide, making us your one-stop solution for international travel.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Call to Action -->
+    <div class="text-center">
+        <h3 class="fw-bold mb-4">Ready to Start Your Journey?</h3>
+        <p class="lead text-muted mb-4">Let our experts guide you through the visa application process</p>
+        <div class="d-flex justify-content-center gap-3">
+            <a asp-controller="Home" asp-action="Contact" class="btn btn-outline-primary btn-lg">
+                <i class="fas fa-envelope me-2"></i>Contact Us
+            </a>
+            <a asp-controller="Visa" asp-action="Apply" class="btn btn-primary btn-lg">
+                <i class="fas fa-plus me-2"></i>Apply Now
+            </a>
+        </div>
+    </div>
+</div>

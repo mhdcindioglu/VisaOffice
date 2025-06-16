@@ -1,0 +1,482 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Home" xml:space="preserve">
+    <value>Ana Sayfa</value>
+  </data>
+  <data name="About" xml:space="preserve">
+    <value>Hakkımızda</value>
+  </data>
+  <data name="Contact" xml:space="preserve">
+    <value>İletişim</value>
+  </data>
+  <data name="Services" xml:space="preserve">
+    <value>Hizmetler</value>
+  </data>
+  <data name="VisaTypes" xml:space="preserve">
+    <value>Vize Türleri</value>
+  </data>
+  <data name="Apply" xml:space="preserve">
+    <value>Başvuru Yap</value>
+  </data>
+  <data name="Track" xml:space="preserve">
+    <value>Başvuru Takibi</value>
+  </data>
+  
+  <!-- Home Page -->
+  <data name="ProfessionalVisaServices" xml:space="preserve">
+    <value>Türkiye için Profesyonel Vize Hizmetleri</value>
+  </data>
+  <data name="HeroDescription" xml:space="preserve">
+    <value>Tüm Türkiye vize ve göçmenlik ihtiyaçlarınız için güvenilir ortağınız. Her adımda uzman rehberliği ile hızlı, güvenilir ve profesyonel hizmet.</value>
+  </data>
+  <data name="ApplyForVisa" xml:space="preserve">
+    <value>Türkiye Vizesi Başvurusu</value>
+  </data>
+  <data name="TrackApplication" xml:space="preserve">
+    <value>Başvuru Takibi</value>
+  </data>
+  
+  <!-- Features -->
+  <data name="FastProcessing" xml:space="preserve">
+    <value>Hızlı İşlem</value>
+  </data>
+  <data name="FastProcessingDesc" xml:space="preserve">
+    <value>Acil başvurular için ekspres işlem seçenekleri ile hızlı sonuç alma süreleri.</value>
+  </data>
+  <data name="ExpertGuidance" xml:space="preserve">
+    <value>Uzman Rehberliği</value>
+  </data>
+  <data name="ExpertGuidanceDesc" xml:space="preserve">
+    <value>Türkiye vize düzenlemelerinde yılların deneyimine sahip profesyonel danışmanlar.</value>
+  </data>
+  <data name="SecureProcess" xml:space="preserve">
+    <value>Güvenli Süreç</value>
+  </data>
+  <data name="SecureProcessDesc" xml:space="preserve">
+    <value>Belgeleriniz ve kişisel bilgileriniz en yüksek güvenlik standartları ile işlenir.</value>
+  </data>
+  
+  <!-- Visa Types -->
+  <data name="TouristVisa" xml:space="preserve">
+    <value>Türkiye Turist Vizesi</value>
+  </data>
+  <data name="TouristVisaDesc" xml:space="preserve">
+    <value>Eğlence seyahatleri, gezi ve Türkiye'nin zengin kültürü ve tarihini keşfetmek için mükemmel.</value>
+  </data>
+  <data name="BusinessVisa" xml:space="preserve">
+    <value>Türkiye İş Vizesi</value>
+  </data>
+  <data name="BusinessVisaDesc" xml:space="preserve">
+    <value>İş toplantıları, konferanslar, ticaret fuarları ve Türkiye'deki ticari faaliyetler için.</value>
+  </data>
+  <data name="StudentVisa" xml:space="preserve">
+    <value>Türkiye Öğrenci Vizesi</value>
+  </data>
+  <data name="StudentVisaDesc" xml:space="preserve">
+    <value>Akademik amaçlarla Türk eğitim kurumlarına kayıtlı öğrenciler için.</value>
+  </data>
+  <data name="WorkVisa" xml:space="preserve">
+    <value>Türkiye Çalışma Vizesi</value>
+  </data>
+  <data name="WorkVisaDesc" xml:space="preserve">
+    <value>Türkiye'de istihdam arayan veya halihazırda çalışan bireyler için.</value>
+  </data>
+  <data name="TransitVisa" xml:space="preserve">
+    <value>Türkiye Transit Vizesi</value>
+  </data>
+  <data name="TransitVisaDesc" xml:space="preserve">
+    <value>Nihai varış noktalarına ulaşmak için Türkiye'den geçiş yapan yolcular için.</value>
+  </data>
+  <data name="FamilyVisa" xml:space="preserve">
+    <value>Türkiye Aile Birleşimi Vizesi</value>
+  </data>
+  <data name="FamilyVisaDesc" xml:space="preserve">
+    <value>Türkiye'de ikamet eden aile üyelerini veya akrabalarını ziyaret etmek için.</value>
+  </data>
+  
+  <!-- Contact Info -->
+  <data name="Address" xml:space="preserve">
+    <value>Adres</value>
+  </data>
+  <data name="Phone" xml:space="preserve">
+    <value>Telefon</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>E-posta</value>
+  </data>
+  <data name="WorkingHours" xml:space="preserve">
+    <value>Çalışma Saatleri</value>
+  </data>
+  
+  <!-- Office Locations -->
+  <data name="MainOfficeAddress" xml:space="preserve">
+    <value>Taksim Meydanı, Beyoğlu, İstanbul 34437</value>
+  </data>
+  <data name="MainOfficePhone" xml:space="preserve">
+    <value>+90 212 123 4567</value>
+  </data>
+  <data name="MainOfficeEmail" xml:space="preserve">
+    <value>istanbul@turkeyvisaoffice.com</value>
+  </data>
+  <data name="MainOfficeHours" xml:space="preserve">
+    <value>Pazartesi - Cuma: 09:00 - 18:00, Cumartesi: 10:00 - 14:00</value>
+  </data>
+  
+  <data name="AnkaraOfficeAddress" xml:space="preserve">
+    <value>Kızılay, Çankaya, Ankara 06420</value>
+  </data>
+  <data name="AnkaraOfficePhone" xml:space="preserve">
+    <value>+90 312 456 7890</value>
+  </data>
+  <data name="AnkaraOfficeEmail" xml:space="preserve">
+    <value>ankara@turkeyvisaoffice.com</value>
+  </data>
+  <data name="AnkaraOfficeHours" xml:space="preserve">
+    <value>Pazartesi - Cuma: 09:00 - 17:00</value>
+  </data>
+  
+  <data name="IzmirOfficeAddress" xml:space="preserve">
+    <value>Alsancak, Konak, İzmir 35220</value>
+  </data>
+  <data name="IzmirOfficePhone" xml:space="preserve">
+    <value>+90 232 789 0123</value>
+  </data>
+  <data name="IzmirOfficeEmail" xml:space="preserve">
+    <value>izmir@turkeyvisaoffice.com</value>
+  </data>  <data name="IzmirOfficeHours" xml:space="preserve">
+    <value>Pazartesi - Cuma: 09:00 - 17:00</value>
+  </data>
+  
+  <!-- Additional Navigation and UI Labels -->
+  <data name="VisaServices" xml:space="preserve">
+    <value>Vize Hizmetleri</value>
+  </data>
+  <data name="Requirements" xml:space="preserve">
+    <value>Gereksinimler</value>
+  </data>
+  <data name="Fees" xml:space="preserve">
+    <value>Ücretler</value>
+  </data>
+  <data name="AllServices" xml:space="preserve">
+    <value>Tüm Hizmetler</value>
+  </data>
+  <data name="DocumentTranslation" xml:space="preserve">
+    <value>Belge Çevirisi</value>
+  </data>
+  <data name="LegalConsultation" xml:space="preserve">
+    <value>Hukuki Danışmanlık</value>
+  </data>
+  <data name="BookAppointment" xml:space="preserve">
+    <value>Randevu Al</value>
+  </data>
+  <data name="Offices" xml:space="preserve">
+    <value>Ofisler</value>
+  </data>
+  <data name="FAQ" xml:space="preserve">
+    <value>SSS</value>
+  </data>
+  <data name="CompanyDescription" xml:space="preserve">
+    <value>Uzman rehberliği ve hızlı işlem ile profesyonel Türkiye vize hizmetleri. Tüm Türkiye vize ve göçmenlik ihtiyaçlarınız için güvenilir ortağınız.</value>
+  </data>
+  <data name="QuickLinks" xml:space="preserve">
+    <value>Hızlı Bağlantılar</value>
+  </data>
+  <data name="ApplyOnline" xml:space="preserve">
+    <value>Online Başvuru</value>
+  </data>
+  <data name="Translation" xml:space="preserve">
+    <value>Çeviri</value>
+  </data>
+  <data name="LegalAdvice" xml:space="preserve">
+    <value>Hukuki Danışmanlık</value>
+  </data>
+  <data name="Appointments" xml:space="preserve">
+    <value>Randevular</value>
+  </data>
+  <data name="ContactInfo" xml:space="preserve">
+    <value>İletişim Bilgileri</value>
+  </data>
+  <data name="AllRightsReserved" xml:space="preserve">
+    <value>Tüm hakları saklıdır.</value>
+  </data>  <data name="PrivacyPolicy" xml:space="preserve">
+    <value>Gizlilik Politikası</value>
+  </data>
+  
+  <!-- Additional Home Page Content -->
+  <data name="PopularVisaTypes" xml:space="preserve">
+    <value>Popüler Vize Türleri</value>
+  </data>
+  <data name="ChooseFromWideRange" xml:space="preserve">
+    <value>Geniş vize hizmet yelpazemizden seçim yapın</value>
+  </data>
+  <data name="ApplyNow" xml:space="preserve">
+    <value>Şimdi Başvur</value>
+  </data>
+  <data name="ViewAllVisaTypes" xml:space="preserve">
+    <value>Tüm Vize Türlerini Görüntüle</value>
+  </data>
+  <data name="ApplicationsProcessed" xml:space="preserve">
+    <value>İşlenen Başvuru</value>
+  </data>
+  <data name="SuccessRate" xml:space="preserve">
+    <value>Başarı Oranı</value>
+  </data>
+  <data name="CountriesServed" xml:space="preserve">
+    <value>Hizmet Verilen Ülke</value>
+  </data>
+  <data name="SupportAvailable" xml:space="preserve">
+    <value>Destek Mevcut</value>
+  </data>
+  <data name="ReadyToStart" xml:space="preserve">
+    <value>Vize başvurunuzu başlatmaya hazır mısınız?</value>
+  </data>
+  <data name="GetExpertGuidance" xml:space="preserve">
+    <value>Vize ihtiyaçlarınız için uzman rehberliği ve hızlı işlem alın.</value>
+  </data>
+  <data name="ContactUs" xml:space="preserve">
+    <value>Bize Ulaşın</value>
+  </data>
+  <data name="GetStarted" xml:space="preserve">
+    <value>Başlayın</value>
+  </data>
+  
+  <!-- About Page -->
+  <data name="AboutUsTitle" xml:space="preserve">
+    <value>Türkiye Vize Ofisi Hakkında</value>
+  </data>
+  <data name="AboutDescription" xml:space="preserve">
+    <value>Türkiye'nin önde gelen vize hizmet sağlayıcısıyız, binlerce gezginin vizelerini hızlı ve verimli bir şekilde almalarına yardımcı oluyoruz.</value>
+  </data>
+  <data name="OurMission" xml:space="preserve">
+    <value>Misyonumuz</value>
+  </data>
+  <data name="MissionDescription" xml:space="preserve">
+    <value>Tam müşteri memnuniyetini sağlarken güvenilir, hızlı ve profesyonel vize hizmetleri sunmak.</value>
+  </data>
+  <data name="WhyChooseUs" xml:space="preserve">
+    <value>Neden Bizi Seçmelisiniz</value>
+  </data>
+  <data name="ExperiencedTeam" xml:space="preserve">
+    <value>Deneyimli Ekip</value>
+  </data>
+  <data name="ExperiencedTeamDesc" xml:space="preserve">
+    <value>Ekibimiz Türkiye vize düzenlemeleri ve göçmenlik hukuku konusunda geniş deneyime sahiptir.</value>
+  </data>
+  <data name="QuickTurnaround" xml:space="preserve">
+    <value>Hızlı İşlem</value>
+  </data>
+  <data name="QuickTurnaroundDesc" xml:space="preserve">
+    <value>Seyahat son tarihlerinizi karşılamak için başvuruları verimli bir şekilde işliyoruz.</value>
+  </data>
+  <data name="PersonalizedService" xml:space="preserve">
+    <value>Kişiselleştirilmiş Hizmet</value>
+  </data>
+  <data name="PersonalizedServiceDesc" xml:space="preserve">
+    <value>Her başvuru uzman danışmanlarımızdan bireysel ilgi görür.</value>
+  </data>
+  <data name="ComprehensiveSupport" xml:space="preserve">
+    <value>Kapsamlı Destek</value>
+  </data>
+  <data name="ComprehensiveSupportDesc" xml:space="preserve">
+    <value>Başvurudan onaya kadar her adımda size destek oluyoruz.</value>
+  </data>
+  
+  <!-- Contact Page -->
+  <data name="ContactUsTitle" xml:space="preserve">
+    <value>Bize Ulaşın</value>
+  </data>
+  <data name="GetInTouch" xml:space="preserve">
+    <value>Uzman ekibimizle iletişime geçin</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Ad</value>
+  </data>
+  <data name="YourName" xml:space="preserve">
+    <value>Adınız</value>
+  </data>
+  <data name="YourEmail" xml:space="preserve">
+    <value>E-posta Adresiniz</value>
+  </data>
+  <data name="Subject" xml:space="preserve">
+    <value>Konu</value>
+  </data>
+  <data name="YourSubject" xml:space="preserve">
+    <value>Konunuz</value>
+  </data>
+  <data name="Message" xml:space="preserve">
+    <value>Mesaj</value>
+  </data>
+  <data name="YourMessage" xml:space="preserve">
+    <value>Mesajınız</value>
+  </data>
+  <data name="SendMessage" xml:space="preserve">
+    <value>Mesaj Gönder</value>
+  </data>
+  
+  <!-- Visa Application Forms -->
+  <data name="VisaApplicationForm" xml:space="preserve">
+    <value>Vize Başvuru Formu</value>
+  </data>
+  <data name="PersonalInformation" xml:space="preserve">
+    <value>Kişisel Bilgiler</value>
+  </data>
+  <data name="FirstName" xml:space="preserve">
+    <value>Ad</value>
+  </data>
+  <data name="LastName" xml:space="preserve">
+    <value>Soyad</value>
+  </data>
+  <data name="DateOfBirth" xml:space="preserve">
+    <value>Doğum Tarihi</value>
+  </data>
+  <data name="Nationality" xml:space="preserve">
+    <value>Uyruk</value>
+  </data>
+  <data name="PassportNumber" xml:space="preserve">
+    <value>Pasaport Numarası</value>
+  </data>
+  <data name="VisaTypeRequired" xml:space="preserve">
+    <value>Gerekli Vize Türü</value>
+  </data>  <data name="Submit" xml:space="preserve">
+    <value>Gönder</value>
+  </data>
+  
+  <!-- Additional form labels -->
+  <data name="CompleteYourVisaApplication" xml:space="preserve">
+    <value>Aşağıdaki vize başvuru formunu tamamlayın</value>
+  </data>
+  <data name="PhoneNumber" xml:space="preserve">
+    <value>Telefon Numarası</value>
+  </data>  <data name="FullName" xml:space="preserve">
+    <value>Ad Soyad</value>
+  </data>
+    <!-- Language Names -->
+  <data name="English" xml:space="preserve">
+    <value>İngilizce</value>
+  </data>
+  <data name="Turkish" xml:space="preserve">
+    <value>Türkçe</value>
+  </data>
+  
+  <!-- Brand Name -->
+  <data name="BrandName" xml:space="preserve">
+    <value>Türkiye Vize Ofisi</value>
+  </data>
+</root>

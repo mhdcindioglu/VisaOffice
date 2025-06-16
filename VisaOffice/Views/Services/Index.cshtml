@@ -1,0 +1,244 @@
+@model List<dynamic>
+@{
+    ViewData["Title"] = "Our Services";
+}
+
+<div class="container py-5">
+    <!-- Page Header -->
+    <div class="text-center mb-5">
+        <h1 class="display-4 fw-bold text-primary">Our Professional Services</h1>
+        <p class="lead text-muted">Comprehensive solutions for all your visa and immigration needs</p>
+    </div>
+
+    <!-- Services Grid -->
+    <div class="row">
+        @foreach (var service in Model)
+        {
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card h-100 border-0 shadow-sm service-card">
+                    <div class="card-body p-4 text-center">
+                        <div class="service-icon mb-4">
+                            <i class="@service.Icon text-primary" style="font-size: 3.5rem;"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">@service.Name</h4>
+                        <p class="text-muted mb-4">@service.Description</p>
+                        <div class="mb-4">
+                            <span class="h5 text-success fw-bold">@service.Price</span>
+                        </div>
+                        <a href="#" class="btn btn-primary btn-lg w-100">
+                            Learn More <i class="fas fa-arrow-right ms-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+
+    <!-- Why Choose Our Services -->
+    <div class="mt-5 pt-5">
+        <div class="text-center mb-5">
+            <h2 class="display-5 fw-bold">Why Choose Our Services?</h2>
+            <p class="lead text-muted">We provide excellence in every aspect of our service delivery</p>
+        </div>
+        
+        <div class="row">
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="text-center">
+                    <div class="bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px;">
+                        <i class="fas fa-award" style="font-size: 2rem;"></i>
+                    </div>
+                    <h5 class="fw-bold">Expert Team</h5>
+                    <p class="text-muted">Certified immigration consultants and legal experts with 15+ years of experience.</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="text-center">
+                    <div class="bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px;">
+                        <i class="fas fa-clock" style="font-size: 2rem;"></i>
+                    </div>
+                    <h5 class="fw-bold">Fast Turnaround</h5>
+                    <p class="text-muted">Quick processing times with express options available for urgent requirements.</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="text-center">
+                    <div class="bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px;">
+                        <i class="fas fa-shield-alt" style="font-size: 2rem;"></i>
+                    </div>
+                    <h5 class="fw-bold">100% Secure</h5>
+                    <p class="text-muted">Your documents and personal information are handled with the highest security standards.</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="text-center">
+                    <div class="bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px;">
+                        <i class="fas fa-headset" style="font-size: 2rem;"></i>
+                    </div>
+                    <h5 class="fw-bold">24/7 Support</h5>
+                    <p class="text-muted">Round-the-clock customer support available via phone, email, and live chat.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Service Process -->
+    <div class="mt-5 pt-5 bg-light p-5 rounded">
+        <div class="text-center mb-5">
+            <h2 class="display-5 fw-bold">How We Work</h2>
+            <p class="lead text-muted">Our streamlined process ensures efficient service delivery</p>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-3 mb-4">
+                <div class="text-center">
+                    <div class="bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                        <span class="fw-bold fs-4">1</span>
+                    </div>
+                    <h5 class="fw-bold">Consultation</h5>
+                    <p class="text-muted">Initial consultation to understand your specific needs and requirements.</p>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="text-center">
+                    <div class="bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                        <span class="fw-bold fs-4">2</span>
+                    </div>
+                    <h5 class="fw-bold">Documentation</h5>
+                    <p class="text-muted">Gathering and reviewing all necessary documents and information.</p>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="text-center">
+                    <div class="bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                        <span class="fw-bold fs-4">3</span>
+                    </div>
+                    <h5 class="fw-bold">Processing</h5>
+                    <p class="text-muted">Professional processing of your application with regular updates on progress.</p>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="text-center">
+                    <div class="bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                        <span class="fw-bold fs-4">4</span>
+                    </div>
+                    <h5 class="fw-bold">Delivery</h5>
+                    <p class="text-muted">Timely delivery of completed services with ongoing support as needed.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Testimonials -->
+    <div class="mt-5 pt-5">
+        <div class="text-center mb-5">
+            <h2 class="display-5 fw-bold">What Our Clients Say</h2>
+            <p class="lead text-muted">Real experiences from satisfied customers</p>
+        </div>
+        
+        <div class="row">
+            <div class="col-lg-4 mb-4">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-body p-4">
+                        <div class="mb-3">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                        </div>
+                        <p class="text-muted mb-3">"Excellent service! The team was professional and helped me get my business visa processed quickly. Highly recommended!"</p>
+                        <div class="d-flex align-items-center">
+                            <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 40px; height: 40px;">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div>
+                                <h6 class="fw-bold mb-0">Sarah Johnson</h6>
+                                <small class="text-muted">Business Executive</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-body p-4">
+                        <div class="mb-3">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                        </div>
+                        <p class="text-muted mb-3">"Outstanding document translation service. Accurate, fast, and professionally certified. Thank you for your help!"</p>
+                        <div class="d-flex align-items-center">
+                            <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 40px; height: 40px;">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div>
+                                <h6 class="fw-bold mb-0">Michael Chen</h6>
+                                <small class="text-muted">Student</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-body p-4">
+                        <div class="mb-3">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                        </div>
+                        <p class="text-muted mb-3">"The legal consultation was invaluable. The experts provided clear guidance and helped me navigate complex immigration requirements."</p>
+                        <div class="d-flex align-items-center">
+                            <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 40px; height: 40px;">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div>
+                                <h6 class="fw-bold mb-0">Emma Rodriguez</h6>
+                                <small class="text-muted">Software Engineer</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Call to Action -->
+    <div class="mt-5 pt-5 text-center">
+        <div class="bg-primary text-white p-5 rounded">
+            <h2 class="fw-bold mb-3">Ready to Get Started?</h2>
+            <p class="lead mb-4">Contact us today to discuss your visa and immigration needs</p>
+            <div class="d-flex justify-content-center gap-3 flex-wrap">
+                <a asp-controller="Home" asp-action="Contact" class="btn btn-light btn-lg">
+                    <i class="fas fa-envelope me-2"></i>Contact Us
+                </a>
+                <a asp-controller="Services" asp-action="Appointments" class="btn btn-outline-light btn-lg">
+                    <i class="fas fa-calendar me-2"></i>Book Appointment
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+.service-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important;
+}
+
+.service-icon {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+</style>

@@ -1,0 +1,119 @@
+@{
+    ViewData["Title"] = "Application Successful";
+}
+
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+            <!-- Success Icon -->
+            <div class="mb-4">
+                <i class="fas fa-check-circle text-success" style="font-size: 5rem;"></i>
+            </div>
+
+            <!-- Success Message -->
+            <h1 class="display-5 fw-bold text-success mb-4">Application Submitted Successfully!</h1>
+            <p class="lead text-muted mb-4">Thank you for choosing Visa Office Pro. Your visa application has been received and is being processed.</p>
+
+            <!-- Application Details Card -->
+            <div class="card border-0 shadow-sm mb-4">
+                <div class="card-body p-4">
+                    <h4 class="fw-bold mb-4">What Happens Next?</h4>
+                    <div class="row text-start">
+                        <div class="col-md-6 mb-3">
+                            <div class="d-flex">
+                                <div class="flex-shrink-0">
+                                    <span class="badge bg-primary rounded-pill">1</span>
+                                </div>
+                                <div class="ms-3">
+                                    <h6 class="fw-bold">Application Review</h6>
+                                    <p class="text-muted mb-0">Our experts will review your application and documents within 24 hours.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="d-flex">
+                                <div class="flex-shrink-0">
+                                    <span class="badge bg-primary rounded-pill">2</span>
+                                </div>
+                                <div class="ms-3">
+                                    <h6 class="fw-bold">Document Verification</h6>
+                                    <p class="text-muted mb-0">We'll verify all submitted documents and may request additional ones if needed.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="d-flex">
+                                <div class="flex-shrink-0">
+                                    <span class="badge bg-primary rounded-pill">3</span>
+                                </div>
+                                <div class="ms-3">
+                                    <h6 class="fw-bold">Processing</h6>
+                                    <p class="text-muted mb-0">Your application will be processed according to the standard timeline for your visa type.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="d-flex">
+                                <div class="flex-shrink-0">
+                                    <span class="badge bg-primary rounded-pill">4</span>
+                                </div>
+                                <div class="ms-3">
+                                    <h6 class="fw-bold">Notification</h6>
+                                    <p class="text-muted mb-0">You'll receive email updates and can track your application status online.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Important Information -->
+            <div class="alert alert-info text-start mb-4">
+                <h5 class="alert-heading"><i class="fas fa-info-circle me-2"></i>Important Information</h5>
+                <ul class="mb-0">
+                    <li><strong>Application ID:</strong> You should have received your unique application ID. Keep it safe for tracking purposes.</li>
+                    <li><strong>Email Confirmation:</strong> A confirmation email has been sent to your registered email address.</li>
+                    <li><strong>Document Submission:</strong> If you haven't uploaded all documents, please do so within 48 hours.</li>
+                    <li><strong>Contact Us:</strong> If you have any questions, don't hesitate to contact our support team.</li>
+                </ul>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="d-flex justify-content-center gap-3 flex-wrap mb-4">
+                <a asp-controller="Visa" asp-action="TrackApplication" class="btn btn-primary btn-lg">
+                    <i class="fas fa-search me-2"></i>Track Your Application
+                </a>
+                <a asp-controller="Home" asp-action="Contact" class="btn btn-outline-primary btn-lg">
+                    <i class="fas fa-envelope me-2"></i>Contact Support
+                </a>
+                <a asp-controller="Home" asp-action="Index" class="btn btn-outline-secondary btn-lg">
+                    <i class="fas fa-home me-2"></i>Back to Home
+                </a>
+            </div>
+
+            <!-- Additional Services -->
+            <div class="card border-0 shadow-sm">
+                <div class="card-body p-4">
+                    <h5 class="fw-bold mb-3">Need Additional Services?</h5>
+                    <div class="row">
+                        <div class="col-md-4 mb-3">
+                            <a asp-controller="Services" asp-action="DocumentTranslation" class="btn btn-outline-primary w-100">
+                                <i class="fas fa-language me-2"></i>Document Translation
+                            </a>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <a asp-controller="Services" asp-action="LegalConsultation" class="btn btn-outline-primary w-100">
+                                <i class="fas fa-gavel me-2"></i>Legal Consultation
+                            </a>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <a asp-controller="Services" asp-action="Appointments" class="btn btn-outline-primary w-100">
+                                <i class="fas fa-calendar me-2"></i>Book Appointment
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

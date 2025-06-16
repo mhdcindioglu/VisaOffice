@@ -1,0 +1,193 @@
+@model dynamic
+@{
+    ViewData["Title"] = "Tracking Result";
+}
+
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <!-- Application Status Card -->
+            <div class="card border-0 shadow-lg">
+                <div class="card-header bg-primary text-white text-center py-4">
+                    <h2 class="fw-bold mb-0">
+                        <i class="fas fa-passport me-2"></i>Application Status
+                    </h2>
+                </div>
+                <div class="card-body p-5">
+                    <!-- Application ID -->
+                    <div class="text-center mb-4">
+                        <h4 class="fw-bold text-primary">Application ID: @Model.ApplicationId</h4>
+                    </div>
+
+                    <!-- Status Badge -->
+                    <div class="text-center mb-4">
+                        @{
+                            var statusClass = Model.Status switch
+                            {
+                                "Submitted" => "bg-secondary",
+                                "Under Review" => "bg-info",
+                                "Processing" => "bg-warning",
+                                "Approved" => "bg-success",
+                                "Rejected" => "bg-danger",
+                                _ => "bg-secondary"
+                            };
+                            var statusIcon = Model.Status switch
+                            {
+                                "Submitted" => "fas fa-file-alt",
+                                "Under Review" => "fas fa-search",
+                                "Processing" => "fas fa-cogs",
+                                "Approved" => "fas fa-check-circle",
+                                "Rejected" => "fas fa-times-circle",
+                                _ => "fas fa-file"
+                            };
+                        }
+                        <span class="badge @statusClass fs-5 px-4 py-3">
+                            <i class="@statusIcon me-2"></i>@Model.Status
+                        </span>
+                    </div>
+
+                    <!-- Timeline -->
+                    <div class="row mb-4">
+                        <div class="col-md-6">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-calendar-alt text-primary me-3"></i>
+                                <div>
+                                    <h6 class="fw-bold mb-0">Submission Date</h6>
+                                    <p class="text-muted mb-0">@Model.SubmissionDate.ToString("MMMM dd, yyyy")</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-clock text-primary me-3"></i>
+                                <div>
+                                    <h6 class="fw-bold mb-0">Estimated Completion</h6>
+                                    <p class="text-muted mb-0">@Model.EstimatedCompletion.ToString("MMMM dd, yyyy")</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Progress Bar -->
+                    @{
+                        var progressValue = Model.Status switch
+                        {
+                            "Submitted" => 25,
+                            "Under Review" => 50,
+                            "Processing" => 75,
+                            "Approved" => 100,
+                            "Rejected" => 100,
+                            _ => 0
+                        };
+                        var progressClass = Model.Status == "Rejected" ? "bg-danger" : "bg-primary";
+                    }
+                    <div class="mb-4">
+                        <div class="d-flex justify-content-between mb-2">
+                            <small class="fw-bold">Progress</small>
+                            <small class="fw-bold">@progressValue%</small>
+                        </div>
+                        <div class="progress" style="height: 8px;">
+                            <div class="progress-bar @progressClass" role="progressbar" style="width: @progressValue%"></div>
+                        </div>
+                    </div>
+
+                    <!-- Status Description -->
+                    <div class="alert alert-info">
+                        @switch (Model.Status)
+                        {
+                            case "Submitted":
+                                <p class="mb-0"><i class="fas fa-info-circle me-2"></i>Your application has been successfully submitted and is in our queue for initial review. You will receive updates as your application progresses.</p>
+                                break;
+                            case "Under Review":
+                                <p class="mb-0"><i class="fas fa-search me-2"></i>Our visa specialists are currently reviewing your application and supporting documents. This process typically takes 1-3 business days.</p>
+                                break;
+                            case "Processing":
+                                <p class="mb-0"><i class="fas fa-cogs me-2"></i>Your application is being processed by the relevant immigration authorities. We will notify you once a decision has been made.</p>
+                                break;
+                            case "Approved":
+                                <p class="mb-0"><i class="fas fa-check-circle me-2"></i>Congratulations! Your visa application has been approved. You will receive detailed instructions via email regarding visa collection.</p>
+                                break;
+                            case "Rejected":
+                                <p class="mb-0"><i class="fas fa-times-circle me-2"></i>Unfortunately, your visa application has been rejected. Please check your email for detailed reasons and guidance on reapplication.</p>
+                                break;
+                        }
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="text-center">
+                        @if (Model.Status == "Approved")
+                        {
+                            <a href="#" class="btn btn-success btn-lg me-3">
+                                <i class="fas fa-download me-2"></i>Download Visa
+                            </a>
+                        }
+                        @if (Model.Status == "Rejected")
+                        {
+                            <a asp-controller="Visa" asp-action="Apply" class="btn btn-primary btn-lg me-3">
+                                <i class="fas fa-redo me-2"></i>Reapply
+                            </a>
+                        }
+                        <a asp-controller="Home" asp-action="Contact" class="btn btn-outline-primary btn-lg">
+                            <i class="fas fa-envelope me-2"></i>Contact Support
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Additional Information -->
+            <div class="mt-4">
+                @if (Model.Status != "Approved" && Model.Status != "Rejected")
+                {
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <h5 class="fw-bold mb-3">What's Next?</h5>
+                            <ul class="list-unstyled">
+                                <li class="mb-2">
+                                    <i class="fas fa-envelope text-primary me-2"></i>
+                                    We'll send you email updates at each stage of the process
+                                </li>
+                                <li class="mb-2">
+                                    <i class="fas fa-phone text-primary me-2"></i>
+                                    If additional documents are needed, we'll contact you immediately
+                                </li>
+                                <li class="mb-2">
+                                    <i class="fas fa-question-circle text-primary me-2"></i>
+                                    You can contact our support team anytime if you have questions
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                }
+
+                <!-- Quick Links -->
+                <div class="card border-0 shadow-sm mt-4">
+                    <div class="card-body p-4">
+                        <h5 class="fw-bold mb-3">Quick Links</h5>
+                        <div class="row">
+                            <div class="col-md-6 mb-2">
+                                <a asp-controller="Visa" asp-action="Apply" class="text-decoration-none">
+                                    <i class="fas fa-plus text-primary me-2"></i>Apply for Another Visa
+                                </a>
+                            </div>
+                            <div class="col-md-6 mb-2">
+                                <a asp-controller="Services" asp-action="FAQ" class="text-decoration-none">
+                                    <i class="fas fa-question-circle text-primary me-2"></i>Frequently Asked Questions
+                                </a>
+                            </div>
+                            <div class="col-md-6 mb-2">
+                                <a asp-controller="Services" asp-action="DocumentTranslation" class="text-decoration-none">
+                                    <i class="fas fa-language text-primary me-2"></i>Document Translation
+                                </a>
+                            </div>
+                            <div class="col-md-6 mb-2">
+                                <a asp-controller="Home" asp-action="Index" class="text-decoration-none">
+                                    <i class="fas fa-home text-primary me-2"></i>Back to Homepage
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,133 @@
+@model List<VisaOffice.Models.VisaType>
+@{
+    ViewData["Title"] = "Visa Types";
+}
+
+<div class="container py-5">
+    <!-- Page Header -->
+    <div class="text-center mb-5">
+        <h1 class="display-4 fw-bold text-primary">Visa Types & Services</h1>
+        <p class="lead text-muted">Choose the right visa type for your travel needs</p>
+    </div>
+
+    <!-- Visa Types Grid -->
+    <div class="row">
+        @foreach (var visaType in Model)
+        {
+            <div class="col-lg-6 col-xl-4 mb-4">
+                <div class="card h-100 border-0 shadow-sm visa-card">
+                    <div class="card-header bg-primary text-white text-center py-4">
+                        <i class="@visaType.IconClass mb-2" style="font-size: 3rem;"></i>
+                        <h4 class="card-title fw-bold mb-0">@visaType.Name</h4>
+                    </div>
+                    <div class="card-body p-4">
+                        <p class="card-text text-muted mb-4">@visaType.Description</p>
+                        
+                        <div class="mb-4">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="fw-bold">Processing Time:</span>
+                                <span class="text-primary">@visaType.ProcessingTime</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="fw-bold">Fee:</span>
+                                <span class="text-success fw-bold fs-5">$@visaType.Fee</span>
+                            </div>
+                        </div>
+
+                        <div class="mb-4">
+                            <h6 class="fw-bold mb-3">Required Documents:</h6>
+                            <ul class="list-unstyled">
+                                @foreach (var requirement in visaType.Requirements.Take(4))
+                                {
+                                    <li class="mb-2">
+                                        <i class="fas fa-check text-success me-2"></i>
+                                        @requirement
+                                    </li>
+                                }
+                                @if (visaType.Requirements.Count > 4)
+                                {
+                                    <li class="text-muted">
+                                        <i class="fas fa-plus me-2"></i>
+                                        And @(visaType.Requirements.Count - 4) more...
+                                    </li>
+                                }
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-transparent border-0 p-4">
+                        <div class="d-grid gap-2">
+                            <a asp-controller="Visa" asp-action="Apply" class="btn btn-primary btn-lg">
+                                <i class="fas fa-plus me-2"></i>Apply Now
+                            </a>
+                            <a asp-controller="Visa" asp-action="Requirements" class="btn btn-outline-primary">
+                                <i class="fas fa-list me-2"></i>View All Requirements
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+
+    <!-- Additional Information -->
+    <div class="mt-5">
+        <div class="row">
+            <div class="col-lg-4 mb-4">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-body p-4 text-center">
+                        <i class="fas fa-clock text-primary mb-3" style="font-size: 2rem;"></i>
+                        <h5 class="fw-bold">Express Processing</h5>
+                        <p class="text-muted">Need your visa urgently? We offer express processing services for an additional fee.</p>
+                        <a href="#" class="btn btn-outline-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-body p-4 text-center">
+                        <i class="fas fa-users text-primary mb-3" style="font-size: 2rem;"></i>
+                        <h5 class="fw-bold">Group Applications</h5>
+                        <p class="text-muted">Special rates and services available for group visa applications (5+ people).</p>
+                        <a asp-controller="Home" asp-action="Contact" class="btn btn-outline-primary">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-body p-4 text-center">
+                        <i class="fas fa-headset text-primary mb-3" style="font-size: 2rem;"></i>
+                        <h5 class="fw-bold">Expert Consultation</h5>
+                        <p class="text-muted">Not sure which visa type you need? Schedule a consultation with our experts.</p>
+                        <a asp-controller="Services" asp-action="LegalConsultation" class="btn btn-outline-primary">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Call to Action -->
+    <div class="text-center mt-5">
+        <div class="bg-primary text-white p-5 rounded">
+            <h3 class="fw-bold mb-3">Ready to Apply?</h3>
+            <p class="lead mb-4">Start your visa application process today with our expert guidance</p>
+            <div class="d-flex justify-content-center gap-3 flex-wrap">
+                <a asp-controller="Visa" asp-action="Apply" class="btn btn-light btn-lg">
+                    <i class="fas fa-rocket me-2"></i>Start Application
+                </a>
+                <a asp-controller="Services" asp-action="FAQ" class="btn btn-outline-light btn-lg">
+                    <i class="fas fa-question-circle me-2"></i>Have Questions?
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+.visa-card {
+    transition: transform 0.3s ease;
+}
+
+.visa-card:hover {
+    transform: translateY(-5px);
+}
+</style>

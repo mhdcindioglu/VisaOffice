@@ -1,0 +1,145 @@
+@{
+    ViewData["Title"] = "Track Application";
+}
+
+<div class="container py-5">
+    <!-- Page Header -->
+    <div class="text-center mb-5">
+        <h1 class="display-4 fw-bold text-primary">Track Your Application</h1>
+        <p class="lead text-muted">Enter your application ID to check the status of your visa application</p>
+    </div>
+
+    <div class="row justify-content-center">
+        <div class="col-lg-6">
+            <!-- Tracking Form -->
+            <div class="card border-0 shadow-sm mb-4">
+                <div class="card-body p-5">
+                    <form asp-action="TrackApplication" method="post">
+                        <div class="mb-4">
+                            <label for="applicationId" class="form-label fw-bold">Application ID</label>
+                            <input type="text" id="applicationId" name="applicationId" class="form-control form-control-lg" 
+                                   placeholder="Enter your application ID (e.g., ABC12345)" required>
+                            <div class="form-text">
+                                <i class="fas fa-info-circle me-1"></i>
+                                You can find your application ID in the confirmation email we sent you.
+                            </div>
+                        </div>
+                        
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary btn-lg">
+                                <i class="fas fa-search me-2"></i>Track Application
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Help Information -->
+            <div class="card border-0 shadow-sm">
+                <div class="card-body p-4">
+                    <h5 class="fw-bold mb-3">Need Help?</h5>
+                    <div class="d-flex mb-3">
+                        <i class="fas fa-question-circle text-primary me-3 mt-1"></i>
+                        <div>
+                            <h6 class="fw-bold mb-1">Can't find your Application ID?</h6>
+                            <p class="text-muted mb-0">Check your email confirmation or contact our support team with your personal details.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex mb-3">
+                        <i class="fas fa-clock text-primary me-3 mt-1"></i>
+                        <div>
+                            <h6 class="fw-bold mb-1">How often is status updated?</h6>
+                            <p class="text-muted mb-0">Application status is updated in real-time. Check back regularly for the latest updates.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <i class="fas fa-phone text-primary me-3 mt-1"></i>
+                        <div>
+                            <h6 class="fw-bold mb-1">Need immediate assistance?</h6>
+                            <p class="text-muted">Call us at <strong>+1 (555) 123-4567</strong> or 
+                               <a asp-controller="Home" asp-action="Contact" class="text-decoration-none">contact us online</a>.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Application Status Guide -->
+    <div class="mt-5">
+        <h3 class="text-center fw-bold mb-4">Application Status Guide</h3>
+        <div class="row">
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-body p-4 text-center">
+                        <div class="bg-secondary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 50px; height: 50px;">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <h6 class="fw-bold">Submitted</h6>
+                        <p class="text-muted small mb-0">Your application has been received and is in our system.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-body p-4 text-center">
+                        <div class="bg-info text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 50px; height: 50px;">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <h6 class="fw-bold">Under Review</h6>
+                        <p class="text-muted small mb-0">Our team is reviewing your application and documents.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-body p-4 text-center">
+                        <div class="bg-warning text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 50px; height: 50px;">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h6 class="fw-bold">Processing</h6>
+                        <p class="text-muted small mb-0">Your application is being processed by the relevant authorities.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-body p-4 text-center">
+                        <div class="bg-success text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 50px; height: 50px;">
+                            <i class="fas fa-check"></i>
+                        </div>
+                        <h6 class="fw-bold">Approved</h6>
+                        <p class="text-muted small mb-0">Congratulations! Your visa has been approved and is ready for collection.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Processing Times -->
+    <div class="mt-5">
+        <div class="bg-light p-4 rounded">
+            <h4 class="fw-bold mb-3">Typical Processing Times</h4>
+            <div class="row">
+                <div class="col-md-6">
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fas fa-camera text-primary me-2"></i><strong>Tourist Visa:</strong> 5-10 business days</li>
+                        <li class="mb-2"><i class="fas fa-briefcase text-primary me-2"></i><strong>Business Visa:</strong> 3-7 business days</li>
+                        <li class="mb-2"><i class="fas fa-graduation-cap text-primary me-2"></i><strong>Student Visa:</strong> 10-15 business days</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fas fa-tools text-primary me-2"></i><strong>Work Visa:</strong> 15-20 business days</li>
+                        <li class="mb-2"><i class="fas fa-plane text-primary me-2"></i><strong>Transit Visa:</strong> 2-5 business days</li>
+                        <li class="mb-2"><i class="fas fa-users text-primary me-2"></i><strong>Family Visa:</strong> 7-12 business days</li>
+                    </ul>
+                </div>
+            </div>
+            <p class="text-muted mb-0">
+                <i class="fas fa-info-circle me-1"></i>
+                <small>Processing times are estimates and may vary depending on application complexity and peak seasons. Express processing is available for urgent applications.</small>
+            </p>
+        </div>
+    </div>
+</div>

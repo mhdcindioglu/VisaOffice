@@ -1,0 +1,156 @@
+@model List<VisaOffice.Models.VisaType>
+@{
+    ViewData["Title"] = "Visa Fees";
+}
+
+<div class="container py-5">
+    <!-- Page Header -->
+    <div class="text-center mb-5">
+        <h1 class="display-4 fw-bold text-primary">Visa Processing Fees</h1>
+        <p class="lead text-muted">Transparent pricing for all our visa services</p>
+    </div>
+
+    <!-- Fee Table -->
+    <div class="row justify-content-center">
+        <div class="col-lg-10">
+            <div class="card border-0 shadow-sm">
+                <div class="card-body p-0">
+                    <div class="table-responsive">
+                        <table class="table table-hover mb-0">
+                            <thead class="bg-primary text-white">
+                                <tr>
+                                    <th class="p-4">Visa Type</th>
+                                    <th class="p-4">Processing Time</th>
+                                    <th class="p-4">Standard Fee</th>
+                                    <th class="p-4">Express Fee</th>
+                                    <th class="p-4">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var visaType in Model)
+                                {
+                                    <tr>
+                                        <td class="p-4">
+                                            <div class="d-flex align-items-center">
+                                                <i class="@visaType.IconClass text-primary me-3" style="font-size: 1.5rem;"></i>
+                                                <div>
+                                                    <h6 class="fw-bold mb-0">@visaType.Name</h6>
+                                                    <small class="text-muted">@visaType.Description</small>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="p-4">
+                                            <span class="badge bg-info">@visaType.ProcessingTime</span>
+                                        </td>
+                                        <td class="p-4">
+                                            <span class="h5 text-success fw-bold">$@visaType.Fee</span>
+                                        </td>
+                                        <td class="p-4">
+                                            <span class="h5 text-warning fw-bold">$@(visaType.Fee + 75)</span>
+                                            <br><small class="text-muted">+$75 express fee</small>
+                                        </td>
+                                        <td class="p-4">
+                                            <a asp-controller="Visa" asp-action="Apply" class="btn btn-outline-primary">Apply Now</a>
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Additional Services -->
+    <div class="mt-5">
+        <h2 class="text-center fw-bold mb-4">Additional Services</h2>
+        <div class="row">
+            <div class="col-lg-4 mb-4">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-body p-4 text-center">
+                        <i class="fas fa-language text-primary mb-3" style="font-size: 2.5rem;"></i>
+                        <h5 class="fw-bold">Document Translation</h5>
+                        <p class="text-muted">Certified translation services</p>
+                        <div class="mb-3">
+                            <span class="h5 text-success fw-bold">From $25/page</span>
+                        </div>
+                        <a asp-controller="Services" asp-action="DocumentTranslation" class="btn btn-outline-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-body p-4 text-center">
+                        <i class="fas fa-gavel text-primary mb-3" style="font-size: 2.5rem;"></i>
+                        <h5 class="fw-bold">Legal Consultation</h5>
+                        <p class="text-muted">Expert legal advice</p>
+                        <div class="mb-3">
+                            <span class="h5 text-success fw-bold">From $100/hour</span>
+                        </div>
+                        <a asp-controller="Services" asp-action="LegalConsultation" class="btn btn-outline-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-body p-4 text-center">
+                        <i class="fas fa-search text-primary mb-3" style="font-size: 2.5rem;"></i>
+                        <h5 class="fw-bold">Document Review</h5>
+                        <p class="text-muted">Pre-submission review</p>
+                        <div class="mb-3">
+                            <span class="h5 text-success fw-bold">From $30</span>
+                        </div>
+                        <a asp-controller="Services" asp-action="Index" class="btn btn-outline-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Payment Information -->
+    <div class="mt-5">
+        <div class="bg-light p-5 rounded">
+            <h3 class="fw-bold mb-4">Payment Information</h3>
+            <div class="row">
+                <div class="col-md-6">
+                    <h5 class="fw-bold text-primary mb-3">Accepted Payment Methods</h5>
+                    <div class="d-flex flex-wrap gap-3 mb-4">
+                        <span class="badge bg-primary p-2"><i class="fas fa-credit-card me-2"></i>Credit Cards</span>
+                        <span class="badge bg-primary p-2"><i class="fas fa-money-check-alt me-2"></i>Debit Cards</span>
+                        <span class="badge bg-primary p-2"><i class="fas fa-university me-2"></i>Bank Transfer</span>
+                        <span class="badge bg-primary p-2"><i class="fas fa-money-bill-wave me-2"></i>Cash</span>
+                    </div>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Secure payment processing</li>
+                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Multiple currency support</li>
+                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Instant payment confirmation</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h5 class="fw-bold text-primary mb-3">Important Notes</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fas fa-info-circle text-info me-2"></i>All fees are non-refundable once processing begins</li>
+                        <li class="mb-2"><i class="fas fa-info-circle text-info me-2"></i>Express processing requires additional $75 fee</li>
+                        <li class="mb-2"><i class="fas fa-info-circle text-info me-2"></i>Group discounts available for 5+ applications</li>
+                        <li class="mb-2"><i class="fas fa-info-circle text-info me-2"></i>Student discounts may apply with valid ID</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Call to Action -->
+    <div class="text-center mt-5">
+        <h3 class="fw-bold mb-3">Ready to Get Started?</h3>
+        <p class="lead text-muted mb-4">Choose your visa type and begin your application today</p>
+        <div class="d-flex justify-content-center gap-3">
+            <a asp-controller="Visa" asp-action="Apply" class="btn btn-primary btn-lg">
+                <i class="fas fa-rocket me-2"></i>Apply Now
+            </a>
+            <a asp-controller="Home" asp-action="Contact" class="btn btn-outline-primary btn-lg">
+                <i class="fas fa-question-circle me-2"></i>Have Questions?
+            </a>
+        </div>
+    </div>
+</div>

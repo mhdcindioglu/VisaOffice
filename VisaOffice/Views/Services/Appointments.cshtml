@@ -1,0 +1,193 @@
+@{
+    ViewData["Title"] = "Book Appointment";
+}
+
+<div class="container py-5">
+    <!-- Page Header -->
+    <div class="text-center mb-5">
+        <h1 class="display-4 fw-bold text-primary">Book an Appointment</h1>
+        <p class="lead text-muted">Schedule a consultation with our visa experts</p>
+    </div>
+
+    <div class="row">
+        <!-- Appointment Form -->
+        <div class="col-lg-8">
+            <div class="card border-0 shadow-sm">
+                <div class="card-body p-5">
+                    <h3 class="fw-bold mb-4">Schedule Your Visit</h3>
+                    
+                    <form id="appointmentForm" asp-action="BookAppointment" method="post">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="name" class="form-label fw-bold">Full Name *</label>
+                                <input type="text" id="name" name="name" class="form-control form-control-lg" placeholder="Enter your full name" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="email" class="form-label fw-bold">Email Address *</label>
+                                <input type="email" id="email" name="email" class="form-control form-control-lg" placeholder="Enter your email" required>
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="phone" class="form-label fw-bold">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" class="form-control form-control-lg" placeholder="Enter your phone number" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="service" class="form-label fw-bold">Service Type *</label>
+                                <select id="service" name="service" class="form-select form-select-lg" required>
+                                    <option value="">Select a service</option>
+                                    <option value="Visa Consultation">Visa Consultation</option>
+                                    <option value="Document Review">Document Review</option>
+                                    <option value="Legal Consultation">Legal Consultation</option>
+                                    <option value="Application Assistance">Application Assistance</option>
+                                    <option value="Document Translation">Document Translation</option>
+                                    <option value="Express Processing">Express Processing</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="appointmentDate" class="form-label fw-bold">Preferred Date *</label>
+                                <input type="date" id="appointmentDate" name="appointmentDate" class="form-control form-control-lg" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="appointmentTime" class="form-label fw-bold">Preferred Time *</label>
+                                <select id="appointmentTime" name="appointmentTime" class="form-select form-select-lg" required>
+                                    <option value="">Select time</option>
+                                    <option value="09:00">09:00 AM</option>
+                                    <option value="09:30">09:30 AM</option>
+                                    <option value="10:00">10:00 AM</option>
+                                    <option value="10:30">10:30 AM</option>
+                                    <option value="11:00">11:00 AM</option>
+                                    <option value="11:30">11:30 AM</option>
+                                    <option value="12:00">12:00 PM</option>
+                                    <option value="14:00">02:00 PM</option>
+                                    <option value="14:30">02:30 PM</option>
+                                    <option value="15:00">03:00 PM</option>
+                                    <option value="15:30">03:30 PM</option>
+                                    <option value="16:00">04:00 PM</option>
+                                    <option value="16:30">04:30 PM</option>
+                                    <option value="17:00">05:00 PM</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="office" class="form-label fw-bold">Preferred Office Location</label>
+                            <select id="office" name="office" class="form-select form-select-lg">
+                                <option value="">Select office location</option>
+                                <option value="Main Office - Downtown">Main Office - Downtown</option>
+                                <option value="Airport Branch">Airport Branch</option>
+                                <option value="University Campus">University Campus Office</option>
+                            </select>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <label for="message" class="form-label fw-bold">Additional Information</label>
+                            <textarea id="message" name="message" class="form-control" rows="4" placeholder="Any specific requirements or questions you'd like to discuss..."></textarea>
+                        </div>
+                        
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary btn-lg">
+                                <i class="fas fa-calendar-check me-2"></i>Book Appointment
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Appointment Information -->
+        <div class="col-lg-4">
+            <div class="card border-0 shadow-sm mb-4">
+                <div class="card-body p-4">
+                    <h5 class="fw-bold mb-3">Why Book an Appointment?</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <i class="fas fa-clock text-primary me-2"></i>
+                            <strong>No Waiting:</strong> Skip the queue with guaranteed service time
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-user-tie text-primary me-2"></i>
+                            <strong>Expert Consultation:</strong> Dedicated time with our specialists
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-file-check text-primary me-2"></i>
+                            <strong>Document Review:</strong> Thorough review of your application
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-shield-alt text-primary me-2"></i>
+                            <strong>Privacy:</strong> Confidential discussion of your case
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card border-0 shadow-sm mb-4">
+                <div class="card-body p-4">
+                    <h5 class="fw-bold mb-3">Office Hours</h5>
+                    <div class="mb-3">
+                        <strong>Main Office - Downtown</strong>
+                        <p class="text-muted mb-0">Monday - Friday: 8:00 AM - 6:00 PM<br>Saturday: 9:00 AM - 2:00 PM</p>
+                    </div>
+                    <div class="mb-3">
+                        <strong>Airport Branch</strong>
+                        <p class="text-muted mb-0">Daily: 6:00 AM - 10:00 PM</p>
+                    </div>
+                    <div>
+                        <strong>University Campus</strong>
+                        <p class="text-muted mb-0">Monday - Friday: 9:00 AM - 5:00 PM</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card border-0 shadow-sm">
+                <div class="card-body p-4">
+                    <h5 class="fw-bold mb-3">Need Immediate Help?</h5>
+                    <div class="d-grid gap-2">
+                        <a href="tel:+15551234567" class="btn btn-outline-primary">
+                            <i class="fas fa-phone me-2"></i>Call Us Now
+                        </a>
+                        <a asp-controller="Home" asp-action="Contact" class="btn btn-outline-primary">
+                            <i class="fas fa-envelope me-2"></i>Send Message
+                        </a>
+                        <a asp-controller="Services" asp-action="FAQ" class="btn btn-outline-primary">
+                            <i class="fas fa-question-circle me-2"></i>View FAQ
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Appointment Policies -->
+    <div class="mt-5">
+        <div class="alert alert-info">
+            <h5 class="alert-heading"><i class="fas fa-info-circle me-2"></i>Appointment Policies</h5>
+            <ul class="mb-0">
+                <li><strong>Confirmation:</strong> You will receive a confirmation email within 24 hours</li>
+                <li><strong>Rescheduling:</strong> Please notify us at least 24 hours in advance for changes</li>
+                <li><strong>Documents:</strong> Bring all relevant documents mentioned in your confirmation email</li>
+                <li><strong>Punctuality:</strong> Please arrive 10 minutes early for your appointment</li>
+                <li><strong>Cancellation:</strong> Free cancellation up to 4 hours before your appointment</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Set minimum date to today
+            const today = new Date().toISOString().split('T')[0];
+            document.getElementById('appointmentDate').setAttribute('min', today);
+            
+            // Set maximum date to 30 days from today
+            const maxDate = new Date();
+            maxDate.setDate(maxDate.getDate() + 30);
+            document.getElementById('appointmentDate').setAttribute('max', maxDate.toISOString().split('T')[0]);
+        });
+    </script>
+}

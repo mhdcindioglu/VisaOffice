@@ -1,0 +1,223 @@
+@model List<VisaOffice.Models.FAQ>
+@{
+    ViewData["Title"] = "Frequently Asked Questions";
+}
+
+<div class="container py-5">
+    <!-- Page Header -->
+    <div class="text-center mb-5">
+        <h1 class="display-4 fw-bold text-primary">Frequently Asked Questions</h1>
+        <p class="lead text-muted">Find answers to common questions about our visa services</p>
+    </div>
+
+    <!-- FAQ Categories -->
+    <div class="row mb-5">
+        <div class="col-12">
+            <div class="d-flex flex-wrap justify-content-center gap-3">
+                <button class="btn btn-outline-primary active" data-category="all">All Questions</button>
+                <button class="btn btn-outline-primary" data-category="processing">Processing</button>
+                <button class="btn btn-outline-primary" data-category="requirements">Requirements</button>
+                <button class="btn btn-outline-primary" data-category="tracking">Tracking</button>
+                <button class="btn btn-outline-primary" data-category="payment">Payment</button>
+                <button class="btn btn-outline-primary" data-category="other">Other</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- FAQ Accordion -->
+    <div class="row justify-content-center">
+        <div class="col-lg-10">
+            <div class="accordion" id="faqAccordion">
+                @for (int i = 0; i < Model.Count; i++)
+                {
+                    var faq = Model[i];
+                    var collapseId = $"collapse{i}";
+                    var headingId = $"heading{i}";
+                    
+                    <div class="accordion-item mb-3 border-0 shadow-sm faq-item" data-category="@faq.Category.ToLower()">
+                        <h2 class="accordion-header" id="@headingId">
+                            <button class="accordion-button @(i == 0 ? "" : "collapsed")" type="button" 
+                                    data-bs-toggle="collapse" data-bs-target="#@collapseId" 
+                                    aria-expanded="@(i == 0 ? "true" : "false")" aria-controls="@collapseId">
+                                <i class="fas fa-question-circle text-primary me-3"></i>
+                                <strong>@faq.Question</strong>
+                            </button>
+                        </h2>
+                        <div id="@collapseId" class="accordion-collapse collapse @(i == 0 ? "show" : "")" 
+                             aria-labelledby="@headingId" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                <p class="text-muted mb-0">@faq.Answer</p>
+                                <div class="mt-3">
+                                    <span class="badge bg-light text-dark">@faq.Category</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+
+    <!-- Still Have Questions -->
+    <div class="mt-5 pt-5">
+        <div class="bg-light p-5 rounded text-center">
+            <h3 class="fw-bold mb-3">Still Have Questions?</h3>
+            <p class="lead text-muted mb-4">Can't find the answer you're looking for? Our expert team is here to help!</p>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="row">
+                        <div class="col-md-4 mb-3">
+                            <div class="card border-0 shadow-sm h-100">
+                                <div class="card-body p-4 text-center">
+                                    <i class="fas fa-phone text-primary mb-3" style="font-size: 2rem;"></i>
+                                    <h5 class="fw-bold">Call Us</h5>
+                                    <p class="text-muted mb-3">Speak with our experts</p>
+                                    <a href="tel:+15551234567" class="btn btn-outline-primary">
+                                        <i class="fas fa-phone me-2"></i>+1 (555) 123-4567
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <div class="card border-0 shadow-sm h-100">
+                                <div class="card-body p-4 text-center">
+                                    <i class="fas fa-envelope text-primary mb-3" style="font-size: 2rem;"></i>
+                                    <h5 class="fw-bold">Email Us</h5>
+                                    <p class="text-muted mb-3">Get detailed answers</p>
+                                    <a asp-controller="Home" asp-action="Contact" class="btn btn-outline-primary">
+                                        <i class="fas fa-envelope me-2"></i>Contact Form
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <div class="card border-0 shadow-sm h-100">
+                                <div class="card-body p-4 text-center">
+                                    <i class="fas fa-calendar text-primary mb-3" style="font-size: 2rem;"></i>
+                                    <h5 class="fw-bold">Book Consultation</h5>
+                                    <p class="text-muted mb-3">Schedule a meeting</p>
+                                    <a asp-controller="Services" asp-action="Appointments" class="btn btn-outline-primary">
+                                        <i class="fas fa-calendar me-2"></i>Book Now
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Popular Resources -->
+    <div class="mt-5">
+        <h3 class="text-center fw-bold mb-4">Popular Resources</h3>
+        <div class="row">
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-body p-4 text-center">
+                        <i class="fas fa-list-check text-primary mb-3" style="font-size: 2rem;"></i>
+                        <h5 class="fw-bold">Requirements</h5>
+                        <p class="text-muted mb-3">Check visa requirements</p>
+                        <a asp-controller="Visa" asp-action="Requirements" class="btn btn-outline-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-body p-4 text-center">
+                        <i class="fas fa-dollar-sign text-primary mb-3" style="font-size: 2rem;"></i>
+                        <h5 class="fw-bold">Fees</h5>
+                        <p class="text-muted mb-3">View processing fees</p>
+                        <a asp-controller="Visa" asp-action="Fees" class="btn btn-outline-primary">Check Fees</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-body p-4 text-center">
+                        <i class="fas fa-search text-primary mb-3" style="font-size: 2rem;"></i>
+                        <h5 class="fw-bold">Track Application</h5>
+                        <p class="text-muted mb-3">Check application status</p>
+                        <a asp-controller="Visa" asp-action="TrackApplication" class="btn btn-outline-primary">Track Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-body p-4 text-center">
+                        <i class="fas fa-map-marker-alt text-primary mb-3" style="font-size: 2rem;"></i>
+                        <h5 class="fw-bold">Office Locations</h5>
+                        <p class="text-muted mb-3">Find nearest office</p>
+                        <a asp-controller="Services" asp-action="Offices" class="btn btn-outline-primary">Find Office</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const categoryButtons = document.querySelectorAll('[data-category]');
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            categoryButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const category = this.getAttribute('data-category');
+                    
+                    // Update active button
+                    categoryButtons.forEach(btn => btn.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    // Filter FAQ items
+                    faqItems.forEach(item => {
+                        const itemCategory = item.getAttribute('data-category');
+                        if (category === 'all' || itemCategory === category) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+}
+
+<style>
+.accordion-button {
+    border-radius: 15px !important;
+    border: none;
+    background-color: #f8f9fa;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #007bff;
+    color: white;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+.accordion-item {
+    border-radius: 15px !important;
+}
+
+.faq-item {
+    transition: all 0.3s ease;
+}
+
+.btn[data-category] {
+    transition: all 0.3s ease;
+}
+
+.btn[data-category]:hover,
+.btn[data-category].active {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+</style>

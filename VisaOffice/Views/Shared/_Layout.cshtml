@@ -1,0 +1,166 @@
+﻿<!DOCTYPE html>
+<html lang="@System.Globalization.CultureInfo.CurrentCulture.TwoLetterISOLanguageName">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - @Resources.ProfessionalVisaServices</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/VisaOffice.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">                <a class="navbar-brand fw-bold" asp-area="" asp-controller="Home" asp-action="Index">
+                    <i class="fas fa-passport me-2"></i>@Resources.BrandName
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item text-nowrap">
+                            <a class="nav-link" asp-controller="Home" asp-action="Index">
+                                <i class="fas fa-home me-1"></i>@Resources.Home
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-nowrap" href="#" id="visaDropdown" role="button" data-bs-toggle="dropdown">
+                                <i class="fas fa-passport me-1"></i>@Resources.VisaServices
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" asp-controller="Visa" asp-action="Types">@Resources.VisaTypes</a></li>
+                                <li><a class="dropdown-item" asp-controller="Visa" asp-action="Apply">@Resources.ApplyForVisa</a></li>
+                                <li><a class="dropdown-item" asp-controller="Visa" asp-action="TrackApplication">@Resources.TrackApplication</a></li>
+                                <li><a class="dropdown-item" asp-controller="Visa" asp-action="Requirements">@Resources.Requirements</a></li>
+                                <li><a class="dropdown-item" asp-controller="Visa" asp-action="Fees">@Resources.Fees</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-nowrap" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown">
+                                <i class="fas fa-cogs me-1"></i>@Resources.Services
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" asp-controller="Services" asp-action="Index">@Resources.AllServices</a></li>
+                                <li><a class="dropdown-item" asp-controller="Services" asp-action="DocumentTranslation">@Resources.DocumentTranslation</a></li>
+                                <li><a class="dropdown-item" asp-controller="Services" asp-action="LegalConsultation">@Resources.LegalConsultation</a></li>
+                                <li><a class="dropdown-item" asp-controller="Services" asp-action="Appointments">@Resources.BookAppointment</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-nowrap" asp-controller="Services" asp-action="Offices">
+                                <i class="fas fa-map-marker-alt me-1"></i>@Resources.Offices
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-nowrap" asp-controller="Services" asp-action="FAQ">
+                                <i class="fas fa-question-circle me-1"></i>@Resources.FAQ
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-nowrap" asp-controller="Home" asp-action="About">
+                                <i class="fas fa-info-circle me-1"></i>@Resources.About
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-nowrap" asp-controller="Home" asp-action="Contact">
+                                <i class="fas fa-envelope me-1"></i>@Resources.Contact
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="d-flex align-items-center">                        <!-- Language Switcher -->
+                        <div class="dropdown me-3">
+                            <button class="btn btn-outline-light btn-sm dropdown-toggle text-nowrap" type="button" id="languageDropdown" data-bs-toggle="dropdown" style="min-height: 37.5px;">
+                                <i class="fas fa-globe me-1"></i>
+                                @(System.Globalization.CultureInfo.CurrentCulture.TwoLetterISOLanguageName.ToUpper())
+                            </button>                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li>
+                                    <a class="dropdown-item" asp-controller="Culture" asp-action="ChangeCulture" asp-route-culture="en-US" asp-route-returnUrl="@Context.Request.Path@Context.Request.QueryString">
+                                        🇺🇸 @Resources.English
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" asp-controller="Culture" asp-action="ChangeCulture" asp-route-culture="tr-TR" asp-route-returnUrl="@Context.Request.Path@Context.Request.QueryString">
+                                        🇹🇷 @Resources.Turkish
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <a class="btn btn-outline-light me-2 text-nowrap" asp-controller="Visa" asp-action="Apply">
+                            <i class="fas fa-plus me-1"></i>@Resources.Apply
+                        </a>
+                        <a class="btn btn-light text-nowrap" asp-controller="Visa" asp-action="TrackApplication">
+                            <i class="fas fa-search me-1"></i>@Resources.Track
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main role="main">
+        @if (TempData["SuccessMessage"] != null)
+        {
+            <div class="alert alert-success alert-dismissible fade show m-3" role="alert">
+                <i class="fas fa-check-circle me-2"></i>@TempData["SuccessMessage"]
+                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            </div>
+        }
+        @RenderBody()
+    </main>
+
+    <footer class="bg-dark text-light py-5 mt-5">
+        <div class="container">
+            <div class="row">                <div class="col-md-4">
+                    <h5><i class="fas fa-passport me-2"></i>@Resources.BrandName</h5>
+                    <p>@Resources.CompanyDescription</p>
+                </div>
+                <div class="col-md-2">
+                    <h6>@Resources.QuickLinks</h6>
+                    <ul class="list-unstyled">
+                        <li><a asp-controller="Visa" asp-action="Types" class="text-light text-decoration-none">@Resources.VisaTypes</a></li>
+                        <li><a asp-controller="Visa" asp-action="Apply" class="text-light text-decoration-none">@Resources.ApplyOnline</a></li>
+                        <li><a asp-controller="Visa" asp-action="TrackApplication" class="text-light text-decoration-none">@Resources.TrackApplication</a></li>
+                        <li><a asp-controller="Visa" asp-action="Requirements" class="text-light text-decoration-none">@Resources.Requirements</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h6>@Resources.Services</h6>
+                    <ul class="list-unstyled">
+                        <li><a asp-controller="Services" asp-action="DocumentTranslation" class="text-light text-decoration-none">@Resources.Translation</a></li>
+                        <li><a asp-controller="Services" asp-action="LegalConsultation" class="text-light text-decoration-none">@Resources.LegalAdvice</a></li>
+                        <li><a asp-controller="Services" asp-action="Appointments" class="text-light text-decoration-none">@Resources.Appointments</a></li>
+                        <li><a asp-controller="Services" asp-action="Index" class="text-light text-decoration-none">@Resources.AllServices</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h6>@Resources.ContactInfo</h6>
+                    <p><i class="fas fa-phone me-2"></i>@Resources.MainOfficePhone</p>
+                    <p><i class="fas fa-envelope me-2"></i>@Resources.MainOfficeEmail</p>
+                    <p><i class="fas fa-map-marker-alt me-2"></i>@Resources.MainOfficeAddress</p>
+                    <div class="mt-3">
+                        <a href="#" class="text-light me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-light me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-light me-3"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="text-light"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2025 @Resources.BrandName. @Resources.AllRightsReserved</p>
+                </div>
+                <div class="col-md-6 text-end">
+                    <a asp-controller="Home" asp-action="Privacy" class="text-light text-decoration-none">@Resources.PrivacyPolicy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

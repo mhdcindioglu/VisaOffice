@@ -1,0 +1,196 @@
+@using Microsoft.Extensions.Localization
+@model VisaOffice.Models.VisaApplication
+@{
+    ViewData["Title"] = Resources.ApplyForVisa;
+}
+
+<div class="container py-5">    <!-- Page Header -->
+    <div class="text-center mb-5">
+        <h1 class="display-4 fw-bold text-primary">@Resources.VisaApplicationForm</h1>
+        <p class="lead text-muted">@Resources.CompleteYourVisaApplication</p>
+    </div>
+
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <div class="card border-0 shadow">
+                <div class="card-body p-5">
+                    <form asp-action="Apply" method="post" novalidate>                        <!-- Personal Information Section -->
+                        <div class="mb-5">
+                            <h4 class="fw-bold text-primary mb-4">
+                                <i class="fas fa-user me-2"></i>@Resources.PersonalInformation
+                            </h4>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label asp-for="FirstName" class="form-label fw-bold">@Resources.FirstName</label>
+                                    <input asp-for="FirstName" class="form-control form-control-lg" placeholder="@Resources.FirstName">
+                                    <span asp-validation-for="FirstName" class="text-danger"></span>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label asp-for="LastName" class="form-label fw-bold">@Resources.LastName</label>
+                                    <input asp-for="LastName" class="form-control form-control-lg" placeholder="@Resources.LastName">
+                                    <span asp-validation-for="LastName" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label asp-for="Email" class="form-label fw-bold"></label>
+                                    <input asp-for="Email" class="form-control form-control-lg" placeholder="Enter your email address">
+                                    <span asp-validation-for="Email" class="text-danger"></span>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label asp-for="PhoneNumber" class="form-label fw-bold"></label>
+                                    <input asp-for="PhoneNumber" class="form-control form-control-lg" placeholder="Enter your phone number">
+                                    <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label asp-for="DateOfBirth" class="form-label fw-bold"></label>
+                                    <input asp-for="DateOfBirth" class="form-control form-control-lg" type="date">
+                                    <span asp-validation-for="DateOfBirth" class="text-danger"></span>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label asp-for="Nationality" class="form-label fw-bold"></label>
+                                    <input asp-for="Nationality" class="form-control form-control-lg" placeholder="Enter your nationality">
+                                    <span asp-validation-for="Nationality" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label asp-for="PassportNumber" class="form-label fw-bold"></label>
+                                <input asp-for="PassportNumber" class="form-control form-control-lg" placeholder="Enter your passport number">
+                                <span asp-validation-for="PassportNumber" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <!-- Visa Information Section -->
+                        <div class="mb-5">
+                            <h4 class="fw-bold text-primary mb-4">
+                                <i class="fas fa-passport me-2"></i>Visa Information
+                            </h4>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label asp-for="VisaType" class="form-label fw-bold"></label>
+                                    <select asp-for="VisaType" class="form-select form-select-lg">
+                                        <option value="">Select Visa Type</option>
+                                        @foreach (var visaType in ViewBag.VisaTypes as List<string>)
+                                        {
+                                            <option value="@visaType">@visaType</option>
+                                        }
+                                    </select>
+                                    <span asp-validation-for="VisaType" class="text-danger"></span>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label asp-for="PurposeOfVisit" class="form-label fw-bold"></label>
+                                    <select asp-for="PurposeOfVisit" class="form-select form-select-lg">
+                                        <option value="">Select Purpose</option>
+                                        <option value="Tourism">Tourism</option>
+                                        <option value="Business">Business</option>
+                                        <option value="Education">Education</option>
+                                        <option value="Employment">Employment</option>
+                                        <option value="Family Visit">Family Visit</option>
+                                        <option value="Medical Treatment">Medical Treatment</option>
+                                        <option value="Transit">Transit</option>
+                                        <option value="Other">Other</option>
+                                    </select>
+                                    <span asp-validation-for="PurposeOfVisit" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label asp-for="IntendedArrivalDate" class="form-label fw-bold"></label>
+                                    <input asp-for="IntendedArrivalDate" class="form-control form-control-lg" type="date">
+                                    <span asp-validation-for="IntendedArrivalDate" class="text-danger"></span>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label asp-for="DurationOfStay" class="form-label fw-bold"></label>
+                                    <input asp-for="DurationOfStay" class="form-control form-control-lg" type="number" min="1" placeholder="Number of days">
+                                    <span asp-validation-for="DurationOfStay" class="text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Additional Information Section -->
+                        <div class="mb-5">
+                            <h4 class="fw-bold text-primary mb-4">
+                                <i class="fas fa-info-circle me-2"></i>Additional Information
+                            </h4>
+                            <div class="mb-3">
+                                <label asp-for="AdditionalInformation" class="form-label fw-bold"></label>
+                                <textarea asp-for="AdditionalInformation" class="form-control" rows="4" placeholder="Any additional information or special requests..."></textarea>
+                                <span asp-validation-for="AdditionalInformation" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <!-- Terms and Conditions -->
+                        <div class="mb-4">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="termsConditions" required>
+                                <label class="form-check-label" for="termsConditions">
+                                    I agree to the <a href="#" data-bs-toggle="modal" data-bs-target="#termsModal">Terms and Conditions</a> and confirm that all information provided is accurate.
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-primary btn-lg py-3">
+                                <i class="fas fa-paper-plane me-2"></i>Submit Application
+                            </button>
+                            <a asp-controller="Visa" asp-action="Types" class="btn btn-outline-secondary">
+                                <i class="fas fa-arrow-left me-2"></i>Back to Visa Types
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Application Tips -->
+    <div class="row mt-5">
+        <div class="col-12">
+            <div class="alert alert-info">
+                <h5><i class="fas fa-lightbulb me-2"></i>Application Tips</h5>
+                <ul class="mb-0">
+                    <li>Ensure all information matches your passport exactly</li>
+                    <li>Have all required documents ready before submission</li>
+                    <li>Double-check your travel dates and purpose of visit</li>
+                    <li>Keep your application reference number for tracking</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Terms and Conditions Modal -->
+<div class="modal fade" id="termsModal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Terms and Conditions</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <h6>Application Terms</h6>
+                <p>By submitting this application, you agree to:</p>
+                <ul>
+                    <li>Provide accurate and truthful information</li>
+                    <li>Submit all required supporting documents</li>
+                    <li>Pay all applicable fees</li>
+                    <li>Comply with visa conditions if approved</li>
+                </ul>
+                <h6>Privacy Policy</h6>
+                <p>Your personal information will be handled in accordance with our privacy policy and applicable data protection laws.</p>
+                <h6>Application Processing</h6>
+                <p>Processing times are estimates and may vary. We are not responsible for delays beyond our control.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
