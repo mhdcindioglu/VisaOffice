@@ -138,8 +138,6 @@
   <data name="Track" xml:space="preserve">
     <value>Track Application</value>
   </data>
-  
-  <!-- Home Page -->
   <data name="ProfessionalVisaServices" xml:space="preserve">
     <value>Professional Visa Services for Turkey</value>
   </data>
@@ -152,8 +150,6 @@
   <data name="TrackApplication" xml:space="preserve">
     <value>Track Application</value>
   </data>
-  
-  <!-- Features -->
   <data name="FastProcessing" xml:space="preserve">
     <value>Fast Processing</value>
   </data>
@@ -172,8 +168,6 @@
   <data name="SecureProcessDesc" xml:space="preserve">
     <value>Your documents and personal information are handled with the highest security standards.</value>
   </data>
-  
-  <!-- Visa Types -->
   <data name="TouristVisa" xml:space="preserve">
     <value>Turkey Tourist Visa</value>
   </data>
@@ -210,8 +204,6 @@
   <data name="FamilyVisaDesc" xml:space="preserve">
     <value>For visiting family members or relatives residing in Turkey.</value>
   </data>
-  
-  <!-- Contact Info -->
   <data name="Address" xml:space="preserve">
     <value>Address</value>
   </data>
@@ -224,8 +216,6 @@
   <data name="WorkingHours" xml:space="preserve">
     <value>Working Hours</value>
   </data>
-  
-  <!-- Office Locations -->
   <data name="MainOfficeAddress" xml:space="preserve">
     <value>Taksim Square, Beyoğlu, Istanbul 34437</value>
   </data>
@@ -238,7 +228,6 @@
   <data name="MainOfficeHours" xml:space="preserve">
     <value>Monday - Friday: 9:00 AM - 6:00 PM, Saturday: 10:00 AM - 2:00 PM</value>
   </data>
-  
   <data name="AnkaraOfficeAddress" xml:space="preserve">
     <value>Kızılay, Çankaya, Ankara 06420</value>
   </data>
@@ -251,7 +240,6 @@
   <data name="AnkaraOfficeHours" xml:space="preserve">
     <value>Monday - Friday: 9:00 AM - 5:00 PM</value>
   </data>
-  
   <data name="IzmirOfficeAddress" xml:space="preserve">
     <value>Alsancak, Konak, İzmir 35220</value>
   </data>
@@ -260,11 +248,10 @@
   </data>
   <data name="IzmirOfficeEmail" xml:space="preserve">
     <value>izmir@turkeyvisaoffice.com</value>
-  </data>  <data name="IzmirOfficeHours" xml:space="preserve">
+  </data>
+  <data name="IzmirOfficeHours" xml:space="preserve">
     <value>Monday - Friday: 9:00 AM - 5:00 PM</value>
   </data>
-  
-  <!-- Additional Navigation and UI Labels -->
   <data name="VisaServices" xml:space="preserve">
     <value>Visa Services</value>
   </data>
@@ -315,11 +302,10 @@
   </data>
   <data name="AllRightsReserved" xml:space="preserve">
     <value>All rights reserved.</value>
-  </data>  <data name="PrivacyPolicy" xml:space="preserve">
+  </data>
+  <data name="PrivacyPolicy" xml:space="preserve">
     <value>Privacy Policy</value>
   </data>
-  
-  <!-- Additional Home Page Content -->
   <data name="PopularVisaTypes" xml:space="preserve">
     <value>Popular Visa Types</value>
   </data>
@@ -356,8 +342,6 @@
   <data name="GetStarted" xml:space="preserve">
     <value>Get Started</value>
   </data>
-  
-  <!-- About Page -->
   <data name="AboutUsTitle" xml:space="preserve">
     <value>About Turkey Visa Office</value>
   </data>
@@ -397,8 +381,6 @@
   <data name="ComprehensiveSupportDesc" xml:space="preserve">
     <value>From application to approval, we support you every step of the way.</value>
   </data>
-  
-  <!-- Contact Page -->
   <data name="ContactUsTitle" xml:space="preserve">
     <value>Contact Us</value>
   </data>
@@ -429,8 +411,6 @@
   <data name="SendMessage" xml:space="preserve">
     <value>Send Message</value>
   </data>
-  
-  <!-- Visa Application Forms -->
   <data name="VisaApplicationForm" xml:space="preserve">
     <value>Visa Application Form</value>
   </data>
@@ -454,32 +434,28 @@
   </data>
   <data name="VisaTypeRequired" xml:space="preserve">
     <value>Visa Type Required</value>
-  </data>  <data name="Submit" xml:space="preserve">
+  </data>
+  <data name="Submit" xml:space="preserve">
     <value>Submit</value>
   </data>
-  
-  <!-- Additional form labels -->
   <data name="CompleteYourVisaApplication" xml:space="preserve">
     <value>Complete your visa application form below</value>
   </data>
   <data name="PhoneNumber" xml:space="preserve">
     <value>Phone Number</value>
-  </data>  <data name="FullName" xml:space="preserve">
+  </data>
+  <data name="FullName" xml:space="preserve">
     <value>Full Name</value>
   </data>
-    <!-- Language Names -->
   <data name="English" xml:space="preserve">
     <value>English</value>
   </data>
   <data name="Turkish" xml:space="preserve">
     <value>Turkish</value>
   </data>
-    <!-- Brand Name -->
   <data name="BrandName" xml:space="preserve">
     <value>Visa Office</value>
   </data>
-  
-  <!-- Processing Time -->
   <data name="ProcessingTime_5_10_BusinessDays" xml:space="preserve">
     <value>5-10 business days</value>
   </data>
@@ -498,13 +474,9 @@
   <data name="ProcessingTime_7_12_BusinessDays" xml:space="preserve">
     <value>7-12 business days</value>
   </data>
-  
-  <!-- Success Message -->
   <data name="ContactMessageThankYou" xml:space="preserve">
     <value>Thank you for your message. We will get back to you soon!</value>
   </data>
-  
-  <!-- Requirements -->
   <data name="ValidPassport" xml:space="preserve">
     <value>Valid passport (minimum 6 months validity)</value>
   </data>
@@ -589,8 +561,6 @@
   <data name="AccommodationArrangements" xml:space="preserve">
     <value>Accommodation arrangements</value>
   </data>
-  
-  <!-- Services -->
   <data name="ServiceTurkeyVisaApplication" xml:space="preserve">
     <value>Turkey Visa Application Processing</value>
   </data>
@@ -645,8 +615,6 @@
   <data name="PriceFrom40" xml:space="preserve">
     <value>From ₺40</value>
   </data>
-  
-  <!-- FAQ Questions -->
   <data name="FAQProcessingTimeQuestion" xml:space="preserve">
     <value>How long does Turkey visa processing take?</value>
   </data>
@@ -695,8 +663,6 @@
   <data name="FAQValidityAnswer" xml:space="preserve">
     <value>Tourist visas are typically valid for 30-90 days, Business visas for 30-180 days, Student visas for the course duration, and Work visas vary by contract.</value>
   </data>
-  
-  <!-- FAQ Categories -->
   <data name="CategoryProcessing" xml:space="preserve">
     <value>Processing</value>
   </data>
@@ -721,8 +687,6 @@
   <data name="CategoryValidity" xml:space="preserve">
     <value>Validity</value>
   </data>
-  
-  <!-- Services Page -->
   <data name="OurProfessionalServices" xml:space="preserve">
     <value>Our Professional Services</value>
   </data>
@@ -741,8 +705,6 @@
   <data name="ExpertTeam" xml:space="preserve">
     <value>Expert Team</value>
   </data>
-  
-  <!-- FAQ Page -->
   <data name="FrequentlyAskedQuestions" xml:space="preserve">
     <value>Frequently Asked Questions</value>
   </data>
@@ -751,5 +713,8 @@
   </data>
   <data name="AllQuestions" xml:space="preserve">
     <value>All Questions</value>
+  </data>
+  <data name="Arabic" xml:space="preserve">
+    <value>Arabic</value>
   </data>
 </root>

@@ -19,8 +19,9 @@ var app = builder.Build();
 // Configure localization
 var supportedCultures = new[]
 {
+    new CultureInfo("ar-SA"),
     new CultureInfo("tr-TR"),
-    new CultureInfo("en-US")
+    new CultureInfo("en-US"),
 };
 
 app.UseRequestLocalization(new RequestLocalizationOptions
@@ -55,7 +56,7 @@ app.MapStaticAssets();
 app.MapControllerRoute(
     name: "culture",
     pattern: "{culture}/{controller=Home}/{action=Index}/{id?}",
-    constraints: new { culture = @"^[a-z]{2}-[A-Z]{2}$" });
+    constraints: new { culture = @"^(ar|[a-z]{2}-[A-Z]{2})$" });
 
 app.MapControllerRoute(
     name: "default",

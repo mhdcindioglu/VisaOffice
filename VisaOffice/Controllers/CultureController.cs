@@ -35,7 +35,7 @@ namespace VisaOffice.Controllers
                 returnUrl = "/";
 
             // Remove any existing culture prefix from the return URL
-            var supportedCultures = new[] { "en-US", "tr-TR" };
+            var supportedCultures = new[] { "en-US", "tr-TR", "ar-SA" };
             foreach (var supportedCulture in supportedCultures)
             {
                 var culturePrefix = "/" + supportedCulture;

@@ -1,0 +1,15 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Run Visa Office Application",
+			"type": "shell",
+			"command": "dotnet run",
+			"group": "build",
+			"isBackground": true,
+			"problemMatcher": [
+				"$dotnet"
+			]
+		}
+	]
+}

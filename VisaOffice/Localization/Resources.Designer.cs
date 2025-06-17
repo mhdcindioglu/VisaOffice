@@ -241,6 +241,15 @@ namespace VisaOffice.Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Arabic.
+        /// </summary>
+        public static string Arabic {
+            get {
+                return ResourceManager.GetString("Arabic", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Bank statements (last 3 months).
         /// </summary>
         public static string BankStatements {
@@ -259,7 +268,7 @@ namespace VisaOffice.Localization {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Turkey Visa Office.
+        ///   Looks up a localized string similar to Visa Office.
         /// </summary>
         public static string BrandName {
             get {

@@ -116,108 +116,113 @@
   </resheader>
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </resheader>
-  <data name="Home" xml:space="preserve">
-    <value>Ana Sayfa</value>
+  </resheader>  <data name="Home" xml:space="preserve">
+    <value>الرئيسية</value>
   </data>
   <data name="About" xml:space="preserve">
-    <value>Hakkımızda</value>
+    <value>حولنا</value>
   </data>
   <data name="Contact" xml:space="preserve">
-    <value>İletişim</value>
+    <value>اتصل بنا</value>
   </data>
   <data name="Services" xml:space="preserve">
-    <value>Hizmetler</value>
+    <value>الخدمات</value>
   </data>
   <data name="VisaTypes" xml:space="preserve">
-    <value>Vize Türleri</value>
+    <value>أنواع التأشيرات</value>
   </data>
   <data name="Apply" xml:space="preserve">
-    <value>Başvuru Yap</value>
+    <value>تقديم طلب</value>
   </data>
   <data name="Track" xml:space="preserve">
-    <value>Başvuru Takibi</value>
-  </data>
+    <value>تتبع الطلب</value>
+  </data>  
+  <!-- Home Page -->
   <data name="ProfessionalVisaServices" xml:space="preserve">
-    <value>Türkiye için Profesyonel Vize Hizmetleri</value>
+    <value>خدمات التأشيرات المهنية لتركيا</value>
   </data>
   <data name="HeroDescription" xml:space="preserve">
-    <value>Tüm Türkiye vize ve göçmenlik ihtiyaçlarınız için güvenilir ortağınız. Her adımda uzman rehberliği ile hızlı, güvenilir ve profesyonel hizmet.</value>
+    <value>شريكك الموثوق لجميع احتياجات التأشيرات والهجرة إلى تركيا. خدمة سريعة وموثوقة ومهنية مع إرشاد الخبراء في كل خطوة.</value>
   </data>
   <data name="ApplyForVisa" xml:space="preserve">
-    <value>Türkiye Vizesi Başvurusu</value>
+    <value>تقديم طلب تأشيرة تركيا</value>
   </data>
   <data name="TrackApplication" xml:space="preserve">
-    <value>Başvuru Takibi</value>
-  </data>
+    <value>تتبع الطلب</value>
+  </data>  
+  <!-- Features -->
   <data name="FastProcessing" xml:space="preserve">
-    <value>Hızlı İşlem</value>
+    <value>معالجة سريعة</value>
   </data>
   <data name="FastProcessingDesc" xml:space="preserve">
-    <value>Acil başvurular için ekspres işlem seçenekleri ile hızlı sonuç alma süreleri.</value>
+    <value>أوقات تسليم سريعة مع خيارات معالجة عاجلة متاحة للطلبات العاجلة.</value>
   </data>
   <data name="ExpertGuidance" xml:space="preserve">
-    <value>Uzman Rehberliği</value>
+    <value>إرشاد الخبراء</value>
   </data>
   <data name="ExpertGuidanceDesc" xml:space="preserve">
-    <value>Türkiye vize düzenlemelerinde yılların deneyimine sahip profesyonel danışmanlar.</value>
+    <value>استشاريون محترفون بخبرة سنوات في لوائح التأشيرات التركية.</value>
   </data>
   <data name="SecureProcess" xml:space="preserve">
-    <value>Güvenli Süreç</value>
+    <value>عملية آمنة</value>
   </data>
   <data name="SecureProcessDesc" xml:space="preserve">
-    <value>Belgeleriniz ve kişisel bilgileriniz en yüksek güvenlik standartları ile işlenir.</value>
-  </data>
+    <value>يتم التعامل مع مستنداتك ومعلوماتك الشخصية بأعلى معايير الأمان.</value>
+  </data>  
+  <!-- Visa Types -->
   <data name="TouristVisa" xml:space="preserve">
-    <value>Türkiye Turist Vizesi</value>
+    <value>تأشيرة سياحية تركيا</value>
   </data>
   <data name="TouristVisaDesc" xml:space="preserve">
-    <value>Eğlence seyahatleri, gezi ve Türkiye'nin zengin kültürü ve tarihini keşfetmek için mükemmel.</value>
+    <value>مثالية للسفر الترفيهي ومشاهدة المعالم واستكشاف الثقافة والتاريخ التركي الغني.</value>
   </data>
   <data name="BusinessVisa" xml:space="preserve">
-    <value>Türkiye İş Vizesi</value>
+    <value>تأشيرة أعمال تركيا</value>
   </data>
   <data name="BusinessVisaDesc" xml:space="preserve">
-    <value>İş toplantıları, konferanslar, ticaret fuarları ve Türkiye'deki ticari faaliyetler için.</value>
+    <value>لاجتماعات الأعمال والمؤتمرات والمعارض التجارية والأنشطة التجارية في تركيا.</value>
   </data>
   <data name="StudentVisa" xml:space="preserve">
-    <value>Türkiye Öğrenci Vizesi</value>
+    <value>تأشيرة طلابية تركيا</value>
   </data>
   <data name="StudentVisaDesc" xml:space="preserve">
-    <value>Akademik amaçlarla Türk eğitim kurumlarına kayıtlı öğrenciler için.</value>
+    <value>للطلاب المسجلين في المؤسسات التعليمية التركية لأغراض أكاديمية.</value>
   </data>
   <data name="WorkVisa" xml:space="preserve">
-    <value>Türkiye Çalışma Vizesi</value>
+    <value>تأشيرة عمل تركيا</value>
   </data>
   <data name="WorkVisaDesc" xml:space="preserve">
-    <value>Türkiye'de istihdam arayan veya halihazırda çalışan bireyler için.</value>
+    <value>للأفراد الذين يسعون للعمل أو العاملين بالفعل في تركيا.</value>
   </data>
   <data name="TransitVisa" xml:space="preserve">
-    <value>Türkiye Transit Vizesi</value>
+    <value>تأشيرة عبور تركيا</value>
   </data>
   <data name="TransitVisaDesc" xml:space="preserve">
-    <value>Nihai varış noktalarına ulaşmak için Türkiye'den geçiş yapan yolcular için.</value>
+    <value>للمسافرين الذين يمرون عبر تركيا للوصول إلى وجهتهم النهائية.</value>
   </data>
   <data name="FamilyVisa" xml:space="preserve">
-    <value>Türkiye Aile Birleşimi Vizesi</value>
+    <value>تأشيرة لم الشمل العائلي تركيا</value>
   </data>
   <data name="FamilyVisaDesc" xml:space="preserve">
-    <value>Türkiye'de ikamet eden aile üyelerini veya akrabalarını ziyaret etmek için.</value>
-  </data>
+    <value>لزيارة أفراد العائلة أو الأقارب المقيمين في تركيا.</value>
+  </data>  
+  <!-- Contact Info -->
   <data name="Address" xml:space="preserve">
-    <value>Adres</value>
+    <value>العنوان</value>
   </data>
   <data name="Phone" xml:space="preserve">
-    <value>Telefon</value>
+    <value>الهاتف</value>
   </data>
   <data name="Email" xml:space="preserve">
-    <value>E-posta</value>
+    <value>البريد الإلكتروني</value>
   </data>
   <data name="WorkingHours" xml:space="preserve">
-    <value>Çalışma Saatleri</value>
+    <value>ساعات العمل</value>
   </data>
+  
+  <!-- Office Locations -->
   <data name="MainOfficeAddress" xml:space="preserve">
-    <value>Taksim Meydanı, Beyoğlu, İstanbul 34437</value>
+    <value>ميدان تقسيم، بيوغلو، اسطنبول 34437</value>
   </data>
   <data name="MainOfficePhone" xml:space="preserve">
     <value>+90 212 123 4567</value>
@@ -226,10 +231,11 @@
     <value>istanbul@turkeyvisaoffice.com</value>
   </data>
   <data name="MainOfficeHours" xml:space="preserve">
-    <value>Pazartesi - Cuma: 09:00 - 18:00, Cumartesi: 10:00 - 14:00</value>
+    <value>الاثنين - الجمعة: 9:00 صباحاً - 6:00 مساءً، السبت: 10:00 صباحاً - 2:00 مساءً</value>
   </data>
+  
   <data name="AnkaraOfficeAddress" xml:space="preserve">
-    <value>Kızılay, Çankaya, Ankara 06420</value>
+    <value>كيزيلاي، تشانكايا، أنقرة 06420</value>
   </data>
   <data name="AnkaraOfficePhone" xml:space="preserve">
     <value>+90 312 456 7890</value>
@@ -238,483 +244,499 @@
     <value>ankara@turkeyvisaoffice.com</value>
   </data>
   <data name="AnkaraOfficeHours" xml:space="preserve">
-    <value>Pazartesi - Cuma: 09:00 - 17:00</value>
+    <value>الاثنين - الجمعة: 9:00 صباحاً - 5:00 مساءً</value>
   </data>
+  
   <data name="IzmirOfficeAddress" xml:space="preserve">
-    <value>Alsancak, Konak, İzmir 35220</value>
+    <value>ألسانجاك، كوناك، إزمير 35220</value>
   </data>
   <data name="IzmirOfficePhone" xml:space="preserve">
     <value>+90 232 789 0123</value>
   </data>
   <data name="IzmirOfficeEmail" xml:space="preserve">
     <value>izmir@turkeyvisaoffice.com</value>
-  </data>
-  <data name="IzmirOfficeHours" xml:space="preserve">
-    <value>Pazartesi - Cuma: 09:00 - 17:00</value>
-  </data>
+  </data>  <data name="IzmirOfficeHours" xml:space="preserve">
+    <value>الاثنين - الجمعة: 9:00 صباحاً - 5:00 مساءً</value>
+  </data>  
+  <!-- Additional Navigation and UI Labels -->
   <data name="VisaServices" xml:space="preserve">
-    <value>Vize Hizmetleri</value>
+    <value>خدمات التأشيرات</value>
   </data>
   <data name="Requirements" xml:space="preserve">
-    <value>Gereksinimler</value>
+    <value>المتطلبات</value>
   </data>
   <data name="Fees" xml:space="preserve">
-    <value>Ücretler</value>
+    <value>الرسوم</value>
   </data>
   <data name="AllServices" xml:space="preserve">
-    <value>Tüm Hizmetler</value>
+    <value>جميع الخدمات</value>
   </data>
   <data name="DocumentTranslation" xml:space="preserve">
-    <value>Belge Çevirisi</value>
+    <value>ترجمة الوثائق</value>
   </data>
   <data name="LegalConsultation" xml:space="preserve">
-    <value>Hukuki Danışmanlık</value>
+    <value>الاستشارة القانونية</value>
   </data>
   <data name="BookAppointment" xml:space="preserve">
-    <value>Randevu Al</value>
+    <value>حجز موعد</value>
   </data>
   <data name="Offices" xml:space="preserve">
-    <value>Ofisler</value>
+    <value>المكاتب</value>
   </data>
   <data name="FAQ" xml:space="preserve">
-    <value>SSS</value>
+    <value>الأسئلة الشائعة</value>
   </data>
   <data name="CompanyDescription" xml:space="preserve">
-    <value>Uzman rehberliği ve hızlı işlem ile profesyonel Türkiye vize hizmetleri. Tüm Türkiye vize ve göçmenlik ihtiyaçlarınız için güvenilir ortağınız.</value>
+    <value>خدمات التأشيرات التركية المهنية مع إرشاد الخبراء ومعالجة سريعة. شريكك الموثوق لجميع احتياجات التأشيرات والهجرة إلى تركيا.</value>
   </data>
   <data name="QuickLinks" xml:space="preserve">
-    <value>Hızlı Bağlantılar</value>
+    <value>روابط سريعة</value>
   </data>
   <data name="ApplyOnline" xml:space="preserve">
-    <value>Online Başvuru</value>
+    <value>تقديم طلب إلكتروني</value>
   </data>
   <data name="Translation" xml:space="preserve">
-    <value>Çeviri</value>
+    <value>الترجمة</value>
   </data>
   <data name="LegalAdvice" xml:space="preserve">
-    <value>Hukuki Danışmanlık</value>
+    <value>الاستشارة القانونية</value>
   </data>
   <data name="Appointments" xml:space="preserve">
-    <value>Randevular</value>
+    <value>المواعيد</value>
   </data>
   <data name="ContactInfo" xml:space="preserve">
-    <value>İletişim Bilgileri</value>
+    <value>معلومات الاتصال</value>
   </data>
   <data name="AllRightsReserved" xml:space="preserve">
-    <value>Tüm hakları saklıdır.</value>
-  </data>
-  <data name="PrivacyPolicy" xml:space="preserve">
-    <value>Gizlilik Politikası</value>
-  </data>
+    <value>جميع الحقوق محفوظة.</value>
+  </data>  <data name="PrivacyPolicy" xml:space="preserve">
+    <value>سياسة الخصوصية</value>
+  </data>  
+  <!-- Additional Home Page Content -->
   <data name="PopularVisaTypes" xml:space="preserve">
-    <value>Popüler Vize Türleri</value>
+    <value>أنواع التأشيرات الشائعة</value>
   </data>
   <data name="ChooseFromWideRange" xml:space="preserve">
-    <value>Geniş vize hizmet yelpazemizden seçim yapın</value>
+    <value>اختر من مجموعتنا الواسعة من خدمات التأشيرات</value>
   </data>
   <data name="ApplyNow" xml:space="preserve">
-    <value>Şimdi Başvur</value>
+    <value>قدم الآن</value>
   </data>
   <data name="ViewAllVisaTypes" xml:space="preserve">
-    <value>Tüm Vize Türlerini Görüntüle</value>
+    <value>عرض جميع أنواع التأشيرات</value>
   </data>
   <data name="ApplicationsProcessed" xml:space="preserve">
-    <value>İşlenen Başvuru</value>
+    <value>الطلبات المعالجة</value>
   </data>
   <data name="SuccessRate" xml:space="preserve">
-    <value>Başarı Oranı</value>
+    <value>معدل النجاح</value>
   </data>
   <data name="CountriesServed" xml:space="preserve">
-    <value>Hizmet Verilen Ülke</value>
+    <value>البلدان المخدومة</value>
   </data>
   <data name="SupportAvailable" xml:space="preserve">
-    <value>Destek Mevcut</value>
+    <value>الدعم متاح</value>
   </data>
   <data name="ReadyToStart" xml:space="preserve">
-    <value>Vize başvurunuzu başlatmaya hazır mısınız?</value>
+    <value>مستعد لبدء طلب التأشيرة؟</value>
   </data>
   <data name="GetExpertGuidance" xml:space="preserve">
-    <value>Vize ihtiyaçlarınız için uzman rehberliği ve hızlı işlem alın.</value>
+    <value>احصل على إرشاد الخبراء ومعالجة سريعة لاحتياجات التأشيرة.</value>
   </data>
   <data name="ContactUs" xml:space="preserve">
-    <value>Bize Ulaşın</value>
+    <value>اتصل بنا</value>
   </data>
   <data name="GetStarted" xml:space="preserve">
-    <value>Başlayın</value>
-  </data>
+    <value>ابدأ الآن</value>
+  </data>  
+  <!-- About Page -->
   <data name="AboutUsTitle" xml:space="preserve">
-    <value>Türkiye Vize Ofisi Hakkında</value>
+    <value>حول مكتب التأشيرات التركية</value>
   </data>
   <data name="AboutDescription" xml:space="preserve">
-    <value>Türkiye'nin önde gelen vize hizmet sağlayıcısıyız, binlerce gezginin vizelerini hızlı ve verimli bir şekilde almalarına yardımcı oluyoruz.</value>
+    <value>نحن مقدم خدمات التأشيرات الرائد في تركيا، نساعد آلاف المسافرين في الحصول على تأشيراتهم بسرعة وكفاءة.</value>
   </data>
   <data name="OurMission" xml:space="preserve">
-    <value>Misyonumuz</value>
+    <value>مهمتنا</value>
   </data>
   <data name="MissionDescription" xml:space="preserve">
-    <value>Tam müşteri memnuniyetini sağlarken güvenilir, hızlı ve profesyonel vize hizmetleri sunmak.</value>
+    <value>توفير خدمات تأشيرات موثوقة وسريعة ومهنية مع ضمان رضا العملاء الكامل.</value>
   </data>
   <data name="WhyChooseUs" xml:space="preserve">
-    <value>Neden Bizi Seçmelisiniz</value>
+    <value>لماذا تختارنا</value>
   </data>
   <data name="ExperiencedTeam" xml:space="preserve">
-    <value>Deneyimli Ekip</value>
+    <value>فريق ذو خبرة</value>
   </data>
   <data name="ExperiencedTeamDesc" xml:space="preserve">
-    <value>Ekibimiz Türkiye vize düzenlemeleri ve göçmenlik hukuku konusunda geniş deneyime sahiptir.</value>
+    <value>فريقنا يتمتع بخبرة واسعة في لوائح التأشيرات التركية وقانون الهجرة.</value>
   </data>
   <data name="QuickTurnaround" xml:space="preserve">
-    <value>Hızlı İşlem</value>
+    <value>تسليم سريع</value>
   </data>
   <data name="QuickTurnaroundDesc" xml:space="preserve">
-    <value>Seyahat son tarihlerinizi karşılamak için başvuruları verimli bir şekilde işliyoruz.</value>
+    <value>نعالج الطلبات بكفاءة لتلبية مواعيد سفرك.</value>
   </data>
   <data name="PersonalizedService" xml:space="preserve">
-    <value>Kişiselleştirilmiş Hizmet</value>
+    <value>خدمة شخصية</value>
   </data>
   <data name="PersonalizedServiceDesc" xml:space="preserve">
-    <value>Her başvuru uzman danışmanlarımızdan bireysel ilgi görür.</value>
+    <value>كل طلب يحصل على اهتمام فردي من استشاريينا الخبراء.</value>
   </data>
   <data name="ComprehensiveSupport" xml:space="preserve">
-    <value>Kapsamlı Destek</value>
+    <value>دعم شامل</value>
   </data>
   <data name="ComprehensiveSupportDesc" xml:space="preserve">
-    <value>Başvurudan onaya kadar her adımda size destek oluyoruz.</value>
-  </data>
+    <value>من التقديم حتى الموافقة، ندعمك في كل خطوة على الطريق.</value>
+  </data>  
+  <!-- Contact Page -->
   <data name="ContactUsTitle" xml:space="preserve">
-    <value>Bize Ulaşın</value>
+    <value>اتصل بنا</value>
   </data>
   <data name="GetInTouch" xml:space="preserve">
-    <value>Uzman ekibimizle iletişime geçin</value>
+    <value>تواصل مع فريق الخبراء لدينا</value>
   </data>
   <data name="Name" xml:space="preserve">
-    <value>Ad</value>
+    <value>الاسم</value>
   </data>
   <data name="YourName" xml:space="preserve">
-    <value>Adınız</value>
+    <value>اسمك</value>
   </data>
   <data name="YourEmail" xml:space="preserve">
-    <value>E-posta Adresiniz</value>
+    <value>بريدك الإلكتروني</value>
   </data>
   <data name="Subject" xml:space="preserve">
-    <value>Konu</value>
+    <value>الموضوع</value>
   </data>
   <data name="YourSubject" xml:space="preserve">
-    <value>Konunuz</value>
+    <value>موضوعك</value>
   </data>
   <data name="Message" xml:space="preserve">
-    <value>Mesaj</value>
+    <value>الرسالة</value>
   </data>
   <data name="YourMessage" xml:space="preserve">
-    <value>Mesajınız</value>
+    <value>رسالتك</value>
   </data>
   <data name="SendMessage" xml:space="preserve">
-    <value>Mesaj Gönder</value>
-  </data>
+    <value>إرسال الرسالة</value>
+  </data>  
+  <!-- Visa Application Forms -->
   <data name="VisaApplicationForm" xml:space="preserve">
-    <value>Vize Başvuru Formu</value>
+    <value>نموذج طلب التأشيرة</value>
   </data>
   <data name="PersonalInformation" xml:space="preserve">
-    <value>Kişisel Bilgiler</value>
+    <value>المعلومات الشخصية</value>
   </data>
   <data name="FirstName" xml:space="preserve">
-    <value>Ad</value>
+    <value>الاسم الأول</value>
   </data>
   <data name="LastName" xml:space="preserve">
-    <value>Soyad</value>
+    <value>اسم العائلة</value>
   </data>
   <data name="DateOfBirth" xml:space="preserve">
-    <value>Doğum Tarihi</value>
+    <value>تاريخ الميلاد</value>
   </data>
   <data name="Nationality" xml:space="preserve">
-    <value>Uyruk</value>
+    <value>الجنسية</value>
   </data>
   <data name="PassportNumber" xml:space="preserve">
-    <value>Pasaport Numarası</value>
+    <value>رقم جواز السفر</value>
   </data>
   <data name="VisaTypeRequired" xml:space="preserve">
-    <value>Gerekli Vize Türü</value>
+    <value>نوع التأشيرة المطلوبة</value>
+  </data>  <data name="Submit" xml:space="preserve">
+    <value>إرسال</value>
   </data>
-  <data name="Submit" xml:space="preserve">
-    <value>Gönder</value>
-  </data>
+  
+  <!-- Additional form labels -->
   <data name="CompleteYourVisaApplication" xml:space="preserve">
-    <value>Aşağıdaki vize başvuru formunu tamamlayın</value>
+    <value>أكمل نموذج طلب التأشيرة أدناه</value>
   </data>
   <data name="PhoneNumber" xml:space="preserve">
-    <value>Telefon Numarası</value>
-  </data>
-  <data name="FullName" xml:space="preserve">
-    <value>Ad Soyad</value>
-  </data>
+    <value>رقم الهاتف</value>
+  </data>  <data name="FullName" xml:space="preserve">
+    <value>الاسم الكامل</value>
+  </data>    <!-- Language Names -->
   <data name="English" xml:space="preserve">
-    <value>İngilizce</value>
+    <value>الإنجليزية</value>
   </data>
   <data name="Turkish" xml:space="preserve">
-    <value>Türkçe</value>
-  </data>
-  <data name="BrandName" xml:space="preserve">
-    <value>Vize Ofisi</value>
-  </data>
-  <data name="ProcessingTime_5_10_BusinessDays" xml:space="preserve">
-    <value>5-10 iş günü</value>
-  </data>
-  <data name="ProcessingTime_3_7_BusinessDays" xml:space="preserve">
-    <value>3-7 iş günü</value>
-  </data>
-  <data name="ProcessingTime_10_15_BusinessDays" xml:space="preserve">
-    <value>10-15 iş günü</value>
-  </data>
-  <data name="ProcessingTime_15_20_BusinessDays" xml:space="preserve">
-    <value>15-20 iş günü</value>
-  </data>
-  <data name="ProcessingTime_2_5_BusinessDays" xml:space="preserve">
-    <value>2-5 iş günü</value>
-  </data>
-  <data name="ProcessingTime_7_12_BusinessDays" xml:space="preserve">
-    <value>7-12 iş günü</value>
-  </data>
-  <data name="ContactMessageThankYou" xml:space="preserve">
-    <value>Mesajınız için teşekkür ederiz. En kısa sürede size döneceğiz!</value>
-  </data>
-  <data name="ValidPassport" xml:space="preserve">
-    <value>Geçerli pasaport (en az 6 ay geçerlilik)</value>
-  </data>
-  <data name="PassportPhotos" xml:space="preserve">
-    <value>2 adet pasaport fotoğrafı</value>
-  </data>
-  <data name="TravelItinerary" xml:space="preserve">
-    <value>Seyahat planı</value>
-  </data>
-  <data name="HotelReservation" xml:space="preserve">
-    <value>Otel rezervasyonu</value>
-  </data>
-  <data name="BankStatements" xml:space="preserve">
-    <value>Banka hesap özeti (son 3 ay)</value>
-  </data>
-  <data name="TravelInsurance" xml:space="preserve">
-    <value>Seyahat sigortası</value>
-  </data>
-  <data name="BusinessInvitationLetter" xml:space="preserve">
-    <value>Türk firmasından davet mektubu</value>
-  </data>
-  <data name="CompanyRegistrationDocuments" xml:space="preserve">
-    <value>Şirket kayıt belgeleri</value>
-  </data>
-  <data name="FinancialStatements" xml:space="preserve">
-    <value>Mali durum belgeleri</value>
-  </data>
-  <data name="PurposeOfVisitDocumentation" xml:space="preserve">
-    <value>Ziyaret amacı belgesi</value>
-  </data>
-  <data name="BusinessTravelInsurance" xml:space="preserve">
-    <value>İş seyahat sigortası</value>
-  </data>
-  <data name="AcceptanceLetterFromUniversity" xml:space="preserve">
-    <value>Türk üniversitesinden kabul mektubu</value>
-  </data>
-  <data name="ProofOfFinancialSupport" xml:space="preserve">
-    <value>Mali destek belgesi</value>
-  </data>
-  <data name="AcademicTranscriptsAndCertificates" xml:space="preserve">
-    <value>Akademik transkript ve diplomalar</value>
-  </data>
-  <data name="MedicalExaminationReport" xml:space="preserve">
-    <value>Sağlık raporu</value>
-  </data>
-  <data name="StudentInsurance" xml:space="preserve">
-    <value>Öğrenci sigortası</value>
-  </data>
-  <data name="JobOfferLetter" xml:space="preserve">
-    <value>Türk işverenden iş teklifi mektubu</value>
-  </data>
-  <data name="WorkPermit" xml:space="preserve">
-    <value>Çalışma izni</value>
-  </data>
-  <data name="EducationalAndProfessionalCertificates" xml:space="preserve">
-    <value>Eğitim ve mesleki sertifikalar</value>
-  </data>
-  <data name="EmploymentContract" xml:space="preserve">
-    <value>İş sözleşmesi</value>
-  </data>
-  <data name="ConfirmedOnwardTicket" xml:space="preserve">
-    <value>Onward bilet</value>
-  </data>
-  <data name="TransitItinerary" xml:space="preserve">
-    <value>Transit planı</value>
-  </data>
-  <data name="VisaForFinalDestination" xml:space="preserve">
-    <value>Varış ülkesi vizesi (gerekirse)</value>
-  </data>
-  <data name="InvitationLetterFromFamilyMember" xml:space="preserve">
-    <value>Aile üyesinden davet mektubu</value>
-  </data>
-  <data name="ProofOfRelationship" xml:space="preserve">
-    <value>Akrabalık belgesi</value>
-  </data>
-  <data name="SponsorDocumentsAndFinancialProof" xml:space="preserve">
-    <value>Sponsor belgeleri ve mali durum</value>
-  </data>
-  <data name="FamilyPhotographs" xml:space="preserve">
-    <value>Aile fotoğrafları</value>
-  </data>
-  <data name="AccommodationArrangements" xml:space="preserve">
-    <value>Konaklama düzenlemeleri</value>
-  </data>
-  <data name="ServiceTurkeyVisaApplication" xml:space="preserve">
-    <value>Türkiye Vize Başvuru İşlemleri</value>
-  </data>
-  <data name="ServiceTurkeyVisaApplicationDesc" xml:space="preserve">
-    <value>Tüm vize türleri için kapsamlı vize başvuru işlemleri</value>
-  </data>
-  <data name="ServiceDocumentTranslation" xml:space="preserve">
-    <value>Belge Çevirisi</value>
-  </data>
-  <data name="ServiceDocumentTranslationDesc" xml:space="preserve">
-    <value>Yeminli tercümanlar tarafından resmi belge çevirisi</value>
-  </data>
-  <data name="ServiceLegalConsultation" xml:space="preserve">
-    <value>Hukuki Danışmanlık</value>
-  </data>
-  <data name="ServiceLegalConsultationDesc" xml:space="preserve">
-    <value>Göçmenlik ve vize konularında uzman hukuki danışmanlık</value>
-  </data>
-  <data name="ServiceAppointmentScheduling" xml:space="preserve">
-    <value>Randevu Planlaması</value>
-  </data>
-  <data name="ServiceAppointmentSchedulingDesc" xml:space="preserve">
-    <value>Konsolosluk görüşmeleri ve danışmanlık için randevu alma</value>
-  </data>
-  <data name="ServiceExpressProcessing" xml:space="preserve">
-    <value>Ekspres İşlem</value>
-  </data>
-  <data name="ServiceExpressProcessingDesc" xml:space="preserve">
-    <value>Acil başvurular için hızlandırılmış vize işlemleri</value>
-  </data>
-  <data name="ServiceDocumentReview" xml:space="preserve">
-    <value>Belge İncelemesi</value>
-  </data>
-  <data name="ServiceDocumentReviewDesc" xml:space="preserve">
-    <value>Başvuru belgelerinizin kapsamlı incelemesi</value>
-  </data>
-  <data name="PriceFrom60" xml:space="preserve">
-    <value>60₺'den başlayan fiyatlarla</value>
-  </data>
-  <data name="PriceFrom25PerPage" xml:space="preserve">
-    <value>Sayfa başı 25₺'den</value>
-  </data>
-  <data name="PriceFrom150PerHour" xml:space="preserve">
-    <value>Saat başı 150₺'den</value>
-  </data>
-  <data name="PriceFree" xml:space="preserve">
-    <value>Ücretsiz</value>
-  </data>
-  <data name="PriceAdditional100" xml:space="preserve">
-    <value>Ek 100₺</value>
-  </data>
-  <data name="PriceFrom40" xml:space="preserve">
-    <value>40₺'den başlayan</value>
-  </data>
-  <data name="FAQProcessingTimeQuestion" xml:space="preserve">
-    <value>Türkiye vizesi işlem süresi ne kadar?</value>
-  </data>
-  <data name="FAQProcessingTimeAnswer" xml:space="preserve">
-    <value>İşlem süreleri vize türüne göre değişir: Turist vizesi 5-10 iş günü, İş vizesi 3-7 iş günü, Öğrenci vizesi 10-15 iş günü, Çalışma vizesi 15-20 iş günü sürer.</value>
-  </data>
-  <data name="FAQTouristRequirementsQuestion" xml:space="preserve">
-    <value>Turist vizesi için hangi belgeler gerekli?</value>
-  </data>
-  <data name="FAQTouristRequirementsAnswer" xml:space="preserve">
-    <value>Geçerli pasaport (6+ ay geçerlilik), 2 pasaport fotoğrafı, seyahat planı, otel rezervasyonu, banka hesap özeti (son 3 ay) ve seyahat sigortası gereklidir.</value>
-  </data>
-  <data name="FAQTrackingQuestion" xml:space="preserve">
-    <value>Vize başvurumu takip edebilir miyim?</value>
-  </data>
-  <data name="FAQTrackingAnswer" xml:space="preserve">
-    <value>Evet, başvuru yaptığınızda verilen başvuru numarası ile online takip sistemimizi kullanabilirsiniz.</value>
-  </data>
-  <data name="FAQRejectionQuestion" xml:space="preserve">
-    <value>Vize başvurum reddedilirse ne olur?</value>
-  </data>
-  <data name="FAQRejectionAnswer" xml:space="preserve">
-    <value>Reddedilme durumunda detaylı açıklama alırsınız. Red mektubunda belirtilen sorunları giderdikten sonra yeniden başvurabilirsiniz. Yeniden başvuru için ücret ödemeniz gerekebilir.</value>
-  </data>
-  <data name="FAQAppointmentQuestion" xml:space="preserve">
-    <value>Vize başvurusu için randevu gerekli mi?</value>
-  </data>
-  <data name="FAQAppointmentAnswer" xml:space="preserve">
-    <value>Randevusuz da kabul edilmekle birlikte, bekleme sürelerini önlemek ve kişiselleştirilmiş hizmet almak için randevu almanızı önemle tavsiye ederiz.</value>
-  </data>
-  <data name="FAQPaymentQuestion" xml:space="preserve">
-    <value>Hangi ödeme yöntemlerini kabul ediyorsunuz?</value>
-  </data>
-  <data name="FAQPaymentAnswer" xml:space="preserve">
-    <value>Nakit, kredi kartı, banka kartı ve banka havalesi kabul ediyoruz. Tüm ücretler işlem başlamadan önce ödenmelidir.</value>
-  </data>
-  <data name="FAQAuthorizationQuestion" xml:space="preserve">
-    <value>Başka biri benim adıma başvuru yapabilir mi?</value>
-  </data>
-  <data name="FAQAuthorizationAnswer" xml:space="preserve">
-    <value>Evet, imzalı yetki mektubu ve kimlik kartı fotokopyanız ile başka birini yetkilendirebilirsiniz.</value>
-  </data>
-  <data name="FAQValidityQuestion" xml:space="preserve">
-    <value>Farklı vize türlerinin geçerlilik süreleri nedir?</value>
-  </data>
-  <data name="FAQValidityAnswer" xml:space="preserve">
-    <value>Turist vizeleri genellikle 30-90 gün, İş vizeleri 30-180 gün, Öğrenci vizeleri kurs süresi boyunca, Çalışma vizeleri ise sözleşmeye göre değişir.</value>
-  </data>
-  <data name="CategoryProcessing" xml:space="preserve">
-    <value>İşlem</value>
-  </data>
-  <data name="CategoryRequirements" xml:space="preserve">
-    <value>Gereksinimler</value>
-  </data>
-  <data name="CategoryTracking" xml:space="preserve">
-    <value>Takip</value>
-  </data>
-  <data name="CategoryRejection" xml:space="preserve">
-    <value>Red</value>
-  </data>
-  <data name="CategoryAppointments" xml:space="preserve">
-    <value>Randevular</value>
-  </data>
-  <data name="CategoryPayment" xml:space="preserve">
-    <value>Ödeme</value>
-  </data>
-  <data name="CategorySubmission" xml:space="preserve">
-    <value>Başvuru</value>
-  </data>
-  <data name="CategoryValidity" xml:space="preserve">
-    <value>Geçerlilik</value>
-  </data>
-  <data name="OurProfessionalServices" xml:space="preserve">
-    <value>Profesyonel Hizmetlerimiz</value>
-  </data>
-  <data name="ComprehensiveSolutions" xml:space="preserve">
-    <value>Tüm vize ve göçmenlik ihtiyaçlarınız için kapsamlı çözümler</value>
-  </data>
-  <data name="LearnMore" xml:space="preserve">
-    <value>Daha Fazla Bilgi</value>
-  </data>
-  <data name="WhyChooseOurServices" xml:space="preserve">
-    <value>Neden Hizmetlerimizi Seçmelisiniz?</value>
-  </data>
-  <data name="ExcellenceInService" xml:space="preserve">
-    <value>Hizmet sunumumuzun her alanında mükemmellik sağlıyoruz</value>
-  </data>
-  <data name="ExpertTeam" xml:space="preserve">
-    <value>Uzman Ekip</value>
-  </data>
-  <data name="FrequentlyAskedQuestions" xml:space="preserve">
-    <value>Sıkça Sorulan Sorular</value>
-  </data>
-  <data name="FindAnswersToCommonQuestions" xml:space="preserve">
-    <value>Vize hizmetlerimizle ilgili yaygın soruların cevaplarını bulun</value>
-  </data>
-  <data name="AllQuestions" xml:space="preserve">
-    <value>Tüm Sorular</value>
+    <value>التركية</value>
   </data>
   <data name="Arabic" xml:space="preserve">
-    <value>Arabça</value>
+    <value>العربية</value>
+  </data>
+    <!-- Brand Name -->
+  <data name="BrandName" xml:space="preserve">
+    <value>مكتب التأشيرات</value>
+  </data>  
+  <!-- Processing Time -->
+  <data name="ProcessingTime_5_10_BusinessDays" xml:space="preserve">
+    <value>5-10 أيام عمل</value>
+  </data>
+  <data name="ProcessingTime_3_7_BusinessDays" xml:space="preserve">
+    <value>3-7 أيام عمل</value>
+  </data>
+  <data name="ProcessingTime_10_15_BusinessDays" xml:space="preserve">
+    <value>10-15 يوم عمل</value>
+  </data>
+  <data name="ProcessingTime_15_20_BusinessDays" xml:space="preserve">
+    <value>15-20 يوم عمل</value>
+  </data>
+  <data name="ProcessingTime_2_5_BusinessDays" xml:space="preserve">
+    <value>2-5 أيام عمل</value>
+  </data>
+  <data name="ProcessingTime_7_12_BusinessDays" xml:space="preserve">
+    <value>7-12 يوم عمل</value>
+  </data>
+  
+  <!-- Success Message -->
+  <data name="ContactMessageThankYou" xml:space="preserve">
+    <value>شكراً لك على رسالتك. سنتواصل معك قريباً!</value>
+  </data>  
+  <!-- Requirements -->
+  <data name="ValidPassport" xml:space="preserve">
+    <value>جواز سفر صالح (صالح لمدة 6 أشهر على الأقل)</value>
+  </data>
+  <data name="PassportPhotos" xml:space="preserve">
+    <value>صورتان شخصيتان بحجم جواز السفر</value>
+  </data>
+  <data name="TravelItinerary" xml:space="preserve">
+    <value>برنامج السفر</value>
+  </data>
+  <data name="HotelReservation" xml:space="preserve">
+    <value>حجز الفندق</value>
+  </data>
+  <data name="BankStatements" xml:space="preserve">
+    <value>كشوف الحسابات المصرفية (آخر 3 أشهر)</value>
+  </data>
+  <data name="TravelInsurance" xml:space="preserve">
+    <value>تأمين السفر</value>
+  </data>
+  <data name="BusinessInvitationLetter" xml:space="preserve">
+    <value>خطاب دعوة عمل من شركة تركية</value>
+  </data>
+  <data name="CompanyRegistrationDocuments" xml:space="preserve">
+    <value>وثائق تسجيل الشركة</value>
+  </data>
+  <data name="FinancialStatements" xml:space="preserve">
+    <value>البيانات المالية</value>
+  </data>
+  <data name="PurposeOfVisitDocumentation" xml:space="preserve">
+    <value>وثائق الغرض من الزيارة</value>
+  </data>
+  <data name="BusinessTravelInsurance" xml:space="preserve">
+    <value>تأمين السفر للأعمال</value>
+  </data>
+  <data name="AcceptanceLetterFromUniversity" xml:space="preserve">
+    <value>خطاب قبول من الجامعة التركية</value>
+  </data>
+  <data name="ProofOfFinancialSupport" xml:space="preserve">
+    <value>إثبات الدعم المالي</value>
+  </data>
+  <data name="AcademicTranscriptsAndCertificates" xml:space="preserve">
+    <value>كشوف الدرجات والشهادات الأكاديمية</value>
+  </data>
+  <data name="MedicalExaminationReport" xml:space="preserve">
+    <value>تقرير الفحص الطبي</value>
+  </data>
+  <data name="StudentInsurance" xml:space="preserve">
+    <value>تأمين الطلاب</value>
+  </data>
+  <data name="JobOfferLetter" xml:space="preserve">
+    <value>خطاب عرض العمل من رب العمل التركي</value>
+  </data>
+  <data name="WorkPermit" xml:space="preserve">
+    <value>تصريح العمل</value>
+  </data>
+  <data name="EducationalAndProfessionalCertificates" xml:space="preserve">
+    <value>الشهادات التعليمية والمهنية</value>
+  </data>
+  <data name="EmploymentContract" xml:space="preserve">
+    <value>عقد العمل</value>
+  </data>
+  <data name="ConfirmedOnwardTicket" xml:space="preserve">
+    <value>تذكرة مؤكدة للوجهة التالية</value>
+  </data>
+  <data name="TransitItinerary" xml:space="preserve">
+    <value>برنامج العبور</value>
+  </data>
+  <data name="VisaForFinalDestination" xml:space="preserve">
+    <value>تأشيرة الوجهة النهائية (إذا كانت مطلوبة)</value>
+  </data>
+  <data name="InvitationLetterFromFamilyMember" xml:space="preserve">
+    <value>خطاب دعوة من أحد أفراد العائلة</value>
+  </data>
+  <data name="ProofOfRelationship" xml:space="preserve">
+    <value>إثبات القرابة</value>
+  </data>
+  <data name="SponsorDocumentsAndFinancialProof" xml:space="preserve">
+    <value>وثائق الكفيل والإثبات المالي</value>
+  </data>
+  <data name="FamilyPhotographs" xml:space="preserve">
+    <value>صور عائلية</value>
+  </data>
+  <data name="AccommodationArrangements" xml:space="preserve">
+    <value>ترتيبات الإقامة</value>
+  </data>  
+  <!-- Services -->
+  <data name="ServiceTurkeyVisaApplication" xml:space="preserve">
+    <value>معالجة طلبات التأشيرة التركية</value>
+  </data>
+  <data name="ServiceTurkeyVisaApplicationDesc" xml:space="preserve">
+    <value>معالجة كاملة لطلبات التأشيرة لجميع أنواع التأشيرات</value>
+  </data>
+  <data name="ServiceDocumentTranslation" xml:space="preserve">
+    <value>ترجمة الوثائق</value>
+  </data>
+  <data name="ServiceDocumentTranslationDesc" xml:space="preserve">
+    <value>ترجمة رسمية للوثائق من قبل مترجمين محلفين</value>
+  </data>
+  <data name="ServiceLegalConsultation" xml:space="preserve">
+    <value>الاستشارة القانونية</value>
+  </data>
+  <data name="ServiceLegalConsultationDesc" xml:space="preserve">
+    <value>مشورة قانونية خبيرة في مسائل الهجرة والتأشيرات</value>
+  </data>
+  <data name="ServiceAppointmentScheduling" xml:space="preserve">
+    <value>جدولة المواعيد</value>
+  </data>
+  <data name="ServiceAppointmentSchedulingDesc" xml:space="preserve">
+    <value>حجز مواعيد لمقابلات الق領事والاستشارات</value>
+  </data>
+  <data name="ServiceExpressProcessing" xml:space="preserve">
+    <value>معالجة سريعة</value>
+  </data>
+  <data name="ServiceExpressProcessingDesc" xml:space="preserve">
+    <value>معالجة سريعة للتأشيرات للطلبات العاجلة</value>
+  </data>
+  <data name="ServiceDocumentReview" xml:space="preserve">
+    <value>مراجعة الوثائق</value>
+  </data>
+  <data name="ServiceDocumentReviewDesc" xml:space="preserve">
+    <value>مراجعة شاملة لوثائق طلبك</value>
+  </data>
+  <data name="PriceFrom60" xml:space="preserve">
+    <value>من ₺60</value>
+  </data>
+  <data name="PriceFrom25PerPage" xml:space="preserve">
+    <value>من ₺25/صفحة</value>
+  </data>
+  <data name="PriceFrom150PerHour" xml:space="preserve">
+    <value>من ₺150/ساعة</value>
+  </data>
+  <data name="PriceFree" xml:space="preserve">
+    <value>مجاني</value>
+  </data>
+  <data name="PriceAdditional100" xml:space="preserve">
+    <value>₺100 إضافية</value>
+  </data>
+  <data name="PriceFrom40" xml:space="preserve">
+    <value>من ₺40</value>
+  </data>  
+  <!-- FAQ Questions -->
+  <data name="FAQProcessingTimeQuestion" xml:space="preserve">
+    <value>كم من الوقت تستغرق معالجة التأشيرة التركية؟</value>
+  </data>
+  <data name="FAQProcessingTimeAnswer" xml:space="preserve">
+    <value>تختلف أوقات المعالجة حسب نوع التأشيرة: التأشيرات السياحية تستغرق 5-10 أيام عمل، وتأشيرات الأعمال تستغرق 3-7 أيام عمل، والتأشيرات الطلابية تستغرق 10-15 يوم عمل، وتأشيرات العمل تستغرق 15-20 يوم عمل.</value>
+  </data>
+  <data name="FAQTouristRequirementsQuestion" xml:space="preserve">
+    <value>ما هي الوثائق التي أحتاجها للحصول على تأشيرة سياحية؟</value>
+  </data>
+  <data name="FAQTouristRequirementsAnswer" xml:space="preserve">
+    <value>تحتاج إلى جواز سفر صالح (صالح لأكثر من 6 أشهر)، صورتان شخصيتان، برنامج السفر، حجوزات الفندق، كشوف الحسابات المصرفية (آخر 3 أشهر)، وتأمين السفر.</value>
+  </data>
+  <data name="FAQTrackingQuestion" xml:space="preserve">
+    <value>هل يمكنني تتبع طلب التأشيرة الخاص بي؟</value>
+  </data>
+  <data name="FAQTrackingAnswer" xml:space="preserve">
+    <value>نعم، يمكنك تتبع طلبك باستخدام رقم الطلب المقدم عند تقديم طلبك. استخدم نظام التتبع الإلكتروني لدينا.</value>
+  </data>
+  <data name="FAQRejectionQuestion" xml:space="preserve">
+    <value>ماذا لو تم رفض طلب التأشيرة الخاص بي؟</value>
+  </data>
+  <data name="FAQRejectionAnswer" xml:space="preserve">
+    <value>في حالة الرفض، ستتلقى شرحاً مفصلاً. يمكنك إعادة التقديم بعد معالجة القضايا المذكورة في خطاب الرفض. قد تطبق رسوم لإعادة التقديم.</value>
+  </data>
+  <data name="FAQAppointmentQuestion" xml:space="preserve">
+    <value>هل أحتاج إلى موعد لتقديم التأشيرة؟</value>
+  </data>
+  <data name="FAQAppointmentAnswer" xml:space="preserve">
+    <value>بينما نقبل الزيارات بدون موعد، نوصي بشدة بحجز موعد لتجنب أوقات الانتظار وضمان خدمة شخصية.</value>
+  </data>
+  <data name="FAQPaymentQuestion" xml:space="preserve">
+    <value>ما هي طرق الدفع التي تقبلونها؟</value>
+  </data>
+  <data name="FAQPaymentAnswer" xml:space="preserve">
+    <value>نقبل النقد وبطاقات الائتمان وبطاقات الخصم والتحويلات المصرفية. يجب دفع جميع الرسوم قبل بدء معالجة الطلب.</value>
+  </data>
+  <data name="FAQAuthorizationQuestion" xml:space="preserve">
+    <value>هل يمكن لشخص آخر تقديم طلبي؟</value>
+  </data>
+  <data name="FAQAuthorizationAnswer" xml:space="preserve">
+    <value>نعم، يمكنك تفويض شخص آخر لتقديم الطلب نيابة عنك مع خطاب تفويض موقع ونسخة من هويتك.</value>
+  </data>
+  <data name="FAQValidityQuestion" xml:space="preserve">
+    <value>ما هي صلاحية أنواع التأشيرات المختلفة؟</value>
+  </data>
+  <data name="FAQValidityAnswer" xml:space="preserve">
+    <value>التأشيرات السياحية عادة صالحة لمدة 30-90 يوماً، وتأشيرات الأعمال لمدة 30-180 يوماً، والتأشيرات الطلابية لمدة الدورة، وتأشيرات العمل تختلف حسب العقد.</value>
+  </data>  
+  <!-- FAQ Categories -->
+  <data name="CategoryProcessing" xml:space="preserve">
+    <value>المعالجة</value>
+  </data>
+  <data name="CategoryRequirements" xml:space="preserve">
+    <value>المتطلبات</value>
+  </data>
+  <data name="CategoryTracking" xml:space="preserve">
+    <value>التتبع</value>
+  </data>
+  <data name="CategoryRejection" xml:space="preserve">
+    <value>الرفض</value>
+  </data>
+  <data name="CategoryAppointments" xml:space="preserve">
+    <value>المواعيد</value>
+  </data>
+  <data name="CategoryPayment" xml:space="preserve">
+    <value>الدفع</value>
+  </data>
+  <data name="CategorySubmission" xml:space="preserve">
+    <value>التقديم</value>
+  </data>
+  <data name="CategoryValidity" xml:space="preserve">
+    <value>الصلاحية</value>
+  </data>
+  
+  <!-- Services Page -->
+  <data name="OurProfessionalServices" xml:space="preserve">
+    <value>خدماتنا المهنية</value>
+  </data>
+  <data name="ComprehensiveSolutions" xml:space="preserve">
+    <value>حلول شاملة لجميع احتياجات التأشيرات والهجرة</value>
+  </data>
+  <data name="LearnMore" xml:space="preserve">
+    <value>اعرف المزيد</value>
+  </data>
+  <data name="WhyChooseOurServices" xml:space="preserve">
+    <value>لماذا تختار خدماتنا؟</value>
+  </data>
+  <data name="ExcellenceInService" xml:space="preserve">
+    <value>نحن نقدم التميز في كل جانب من جوانب تقديم خدماتنا</value>
+  </data>
+  <data name="ExpertTeam" xml:space="preserve">
+    <value>فريق خبراء</value>
+  </data>
+  
+  <!-- FAQ Page -->
+  <data name="FrequentlyAskedQuestions" xml:space="preserve">
+    <value>الأسئلة الشائعة</value>
+  </data>
+  <data name="FindAnswersToCommonQuestions" xml:space="preserve">
+    <value>اعثر على إجابات للأسئلة الشائعة حول خدمات التأشيرات لدينا</value>
+  </data>
+  <data name="AllQuestions" xml:space="preserve">
+    <value>جميع الأسئلة</value>
   </data>
 </root>
