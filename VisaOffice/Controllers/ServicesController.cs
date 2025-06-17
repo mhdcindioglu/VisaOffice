@@ -42,9 +42,7 @@ namespace VisaOffice.Controllers
         public IActionResult DocumentTranslation()
         {
             return View();
-        }
-
-        public IActionResult LegalConsultation()
+        }        public IActionResult LegalConsultation()
         {
             return View();
         }
@@ -53,96 +51,100 @@ namespace VisaOffice.Controllers
         {
             return new List<dynamic>
             {
-                new { 
-                    Name = "Türkiye Vize Başvuru İşlemleri / Turkey Visa Application Processing", 
-                    Description = "Tüm vize türleri için kapsamlı vize başvuru işlemleri / Complete visa application processing for all visa types",
+                new 
+                { 
+                    Name = Resources.ServiceTurkeyVisaApplication, 
+                    Description = Resources.ServiceTurkeyVisaApplicationDesc,
                     Icon = "fas fa-passport",
-                    Price = "60₺'den başlayan fiyatlarla / From ₺60"
+                    Price = Resources.PriceFrom60,
                 },
-                new { 
-                    Name = "Belge Çevirisi / Document Translation", 
-                    Description = "Yeminli tercümanlar tarafından resmi belge çevirisi / Official translation of documents by sworn translators",
+                new 
+                { 
+                    Name = Resources.ServiceDocumentTranslation, 
+                    Description = Resources.ServiceDocumentTranslationDesc,
                     Icon = "fas fa-language",
-                    Price = "Sayfa başı 25₺'den / From ₺25/page"
+                    Price = Resources.PriceFrom25PerPage,
                 },
-                new { 
-                    Name = "Hukuki Danışmanlık / Legal Consultation", 
-                    Description = "Göçmenlik ve vize konularında uzman hukuki danışmanlık / Expert legal advice on immigration and visa matters",
+                new 
+                { 
+                    Name = Resources.ServiceLegalConsultation, 
+                    Description = Resources.ServiceLegalConsultationDesc,
                     Icon = "fas fa-gavel",
-                    Price = "Saat başı 150₺'den / From ₺150/hour"
+                    Price = Resources.PriceFrom150PerHour,
                 },
-                new { 
-                    Name = "Randevu Planlaması / Appointment Scheduling", 
-                    Description = "Konsolosluk görüşmeleri ve danışmanlık için randevu alma / Book appointments for consulate interviews and consultations",
+                new 
+                { 
+                    Name = Resources.ServiceAppointmentScheduling, 
+                    Description = Resources.ServiceAppointmentSchedulingDesc,
                     Icon = "fas fa-calendar-alt",
-                    Price = "Ücretsiz / Free"
+                    Price = Resources.PriceFree,
                 },
-                new { 
-                    Name = "Ekspres İşlem / Express Processing", 
-                    Description = "Acil başvurular için hızlandırılmış vize işlemleri / Fast-track visa processing for urgent applications",
+                new 
+                { 
+                    Name = Resources.ServiceExpressProcessing, 
+                    Description = Resources.ServiceExpressProcessingDesc,
                     Icon = "fas fa-bolt",
-                    Price = "Ek 100₺ / Additional ₺100"
+                    Price = Resources.PriceAdditional100,
                 },
-                new { 
-                    Name = "Belge İncelemesi / Document Review", 
-                    Description = "Başvuru belgelerinizin kapsamlı incelemesi / Comprehensive review of your application documents",
+                new 
+                { 
+                    Name = Resources.ServiceDocumentReview, 
+                    Description = Resources.ServiceDocumentReviewDesc,
                     Icon = "fas fa-search",
-                    Price = "40₺'den başlayan / From ₺40"
-                }
+                    Price = Resources.PriceFrom40,
+                },
             };
-        }
-
-        private List<FAQ> GetFAQs()
+        }        private List<FAQ> GetFAQs()
         {
             return new List<FAQ>
             {
                 new FAQ
                 {
-                    Question = "Türkiye vizesi işlem süresi ne kadar? / How long does Turkey visa processing take?",
-                    Answer = "İşlem süreleri vize türüne göre değişir: Turist vizesi 5-10 iş günü, İş vizesi 3-7 iş günü, Öğrenci vizesi 10-15 iş günü, Çalışma vizesi 15-20 iş günü sürer. / Processing times vary by visa type: Tourist visas take 5-10 business days, Business visas take 3-7 business days, Student visas take 10-15 business days, and Work visas take 15-20 business days.",
-                    Category = "İşlem / Processing"
+                    Question = Resources.FAQProcessingTimeQuestion,
+                    Answer = Resources.FAQProcessingTimeAnswer,
+                    Category = Resources.CategoryProcessing
                 },
                 new FAQ
                 {
-                    Question = "Turist vizesi için hangi belgeler gerekli? / What documents do I need for a tourist visa?",
-                    Answer = "Geçerli pasaport (6+ ay geçerlilik), 2 pasaport fotoğrafı, seyahat planı, otel rezervasyonu, banka hesap özeti (son 3 ay) ve seyahat sigortası gereklidir. / You need a valid passport (6+ months validity), 2 passport photos, travel itinerary, hotel bookings, bank statements (last 3 months), and travel insurance.",
-                    Category = "Gereksinimler / Requirements"
+                    Question = Resources.FAQTouristRequirementsQuestion,
+                    Answer = Resources.FAQTouristRequirementsAnswer,
+                    Category = Resources.CategoryRequirements
                 },
                 new FAQ
                 {
-                    Question = "Vize başvurumu takip edebilir miyim? / Can I track my visa application?",
-                    Answer = "Evet, başvuru yaptığınızda verilen başvuru numarası ile online takip sistemimizi kullanabilirsiniz. / Yes, you can track your application using the application ID provided when you submitted your application. Use our online tracking system.",
-                    Category = "Takip / Tracking"
+                    Question = Resources.FAQTrackingQuestion,
+                    Answer = Resources.FAQTrackingAnswer,
+                    Category = Resources.CategoryTracking
                 },
                 new FAQ
                 {
-                    Question = "Vize başvurum reddedilirse ne olur? / What if my visa application is rejected?",
-                    Answer = "Reddedilme durumunda detaylı açıklama alırsınız. Red mektubunda belirtilen sorunları giderdikten sonra yeniden başvurabilirsiniz. Yeniden başvuru için ücret ödemeniz gerekebilir. / If rejected, you'll receive a detailed explanation. You can reapply after addressing the issues mentioned in the rejection letter. Fees may apply for reapplication.",
-                    Category = "Red / Rejection"
+                    Question = Resources.FAQRejectionQuestion,
+                    Answer = Resources.FAQRejectionAnswer,
+                    Category = Resources.CategoryRejection
                 },
                 new FAQ
                 {
-                    Question = "Vize başvurusu için randevu gerekli mi? / Do I need an appointment for visa submission?",
-                    Answer = "Randevusuz da kabul edilmekle birlikte, bekleme sürelerini önlemek ve kişiselleştirilmiş hizmet almak için randevu almanızı önemle tavsiye ederiz. / While walk-ins are accepted, we highly recommend booking an appointment to avoid waiting times and ensure personalized service.",
-                    Category = "Randevular / Appointments"
+                    Question = Resources.FAQAppointmentQuestion,
+                    Answer = Resources.FAQAppointmentAnswer,
+                    Category = Resources.CategoryAppointments
                 },
                 new FAQ
                 {
-                    Question = "Hangi ödeme yöntemlerini kabul ediyorsunuz? / What payment methods do you accept?",
-                    Answer = "Nakit, kredi kartı, banka kartı ve banka havalesi kabul ediyoruz. Tüm ücretler işlem başlamadan önce ödenmelidir. / We accept cash, credit cards, debit cards, and bank transfers. All fees must be paid before application processing begins.",
-                    Category = "Ödeme / Payment"
+                    Question = Resources.FAQPaymentQuestion,
+                    Answer = Resources.FAQPaymentAnswer,
+                    Category = Resources.CategoryPayment
                 },
                 new FAQ
                 {
-                    Question = "Başka biri benim adıma başvuru yapabilir mi? / Can someone else submit my application?",
-                    Answer = "Evet, imzalı yetki mektubu ve kimlik kartı fotokopyanız ile başka birini yetkilendirebilirsiniz. / Yes, you can authorize someone to submit on your behalf with a signed authorization letter and copy of your ID.",
-                    Category = "Başvuru / Submission"
+                    Question = Resources.FAQAuthorizationQuestion,
+                    Answer = Resources.FAQAuthorizationAnswer,
+                    Category = Resources.CategorySubmission
                 },
                 new FAQ
                 {
-                    Question = "Farklı vize türlerinin geçerlilik süreleri nedir? / What is the validity of different visa types?",
-                    Answer = "Turist vizeleri genellikle 30-90 gün, İş vizeleri 30-180 gün, Öğrenci vizeleri kurs süresi boyunca, Çalışma vizeleri ise sözleşmeye göre değişir. / Tourist visas are typically valid for 30-90 days, Business visas for 30-180 days, Student visas for the course duration, and Work visas vary by contract.",
-                    Category = "Geçerlilik / Validity"
+                    Question = Resources.FAQValidityQuestion,
+                    Answer = Resources.FAQValidityAnswer,
+                    Category = Resources.CategoryValidity
                 }
             };
         }

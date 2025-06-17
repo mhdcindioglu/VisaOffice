@@ -474,9 +474,282 @@
   <data name="Turkish" xml:space="preserve">
     <value>Turkish</value>
   </data>
-  
-  <!-- Brand Name -->
+    <!-- Brand Name -->
   <data name="BrandName" xml:space="preserve">
     <value>Turkey Visa Office</value>
+  </data>
+  
+  <!-- Processing Time -->
+  <data name="ProcessingTime_5_10_BusinessDays" xml:space="preserve">
+    <value>5-10 business days</value>
+  </data>
+  <data name="ProcessingTime_3_7_BusinessDays" xml:space="preserve">
+    <value>3-7 business days</value>
+  </data>
+  <data name="ProcessingTime_10_15_BusinessDays" xml:space="preserve">
+    <value>10-15 business days</value>
+  </data>
+  <data name="ProcessingTime_15_20_BusinessDays" xml:space="preserve">
+    <value>15-20 business days</value>
+  </data>
+  <data name="ProcessingTime_2_5_BusinessDays" xml:space="preserve">
+    <value>2-5 business days</value>
+  </data>
+  <data name="ProcessingTime_7_12_BusinessDays" xml:space="preserve">
+    <value>7-12 business days</value>
+  </data>
+  
+  <!-- Success Message -->
+  <data name="ContactMessageThankYou" xml:space="preserve">
+    <value>Thank you for your message. We will get back to you soon!</value>
+  </data>
+  
+  <!-- Requirements -->
+  <data name="ValidPassport" xml:space="preserve">
+    <value>Valid passport (minimum 6 months validity)</value>
+  </data>
+  <data name="PassportPhotos" xml:space="preserve">
+    <value>2 passport photos</value>
+  </data>
+  <data name="TravelItinerary" xml:space="preserve">
+    <value>Travel itinerary</value>
+  </data>
+  <data name="HotelReservation" xml:space="preserve">
+    <value>Hotel reservation</value>
+  </data>
+  <data name="BankStatements" xml:space="preserve">
+    <value>Bank statements (last 3 months)</value>
+  </data>
+  <data name="TravelInsurance" xml:space="preserve">
+    <value>Travel insurance</value>
+  </data>
+  <data name="BusinessInvitationLetter" xml:space="preserve">
+    <value>Business invitation letter from Turkish company</value>
+  </data>
+  <data name="CompanyRegistrationDocuments" xml:space="preserve">
+    <value>Company registration documents</value>
+  </data>
+  <data name="FinancialStatements" xml:space="preserve">
+    <value>Financial statements</value>
+  </data>
+  <data name="PurposeOfVisitDocumentation" xml:space="preserve">
+    <value>Purpose of visit documentation</value>
+  </data>
+  <data name="BusinessTravelInsurance" xml:space="preserve">
+    <value>Business travel insurance</value>
+  </data>
+  <data name="AcceptanceLetterFromUniversity" xml:space="preserve">
+    <value>Acceptance letter from Turkish university</value>
+  </data>
+  <data name="ProofOfFinancialSupport" xml:space="preserve">
+    <value>Proof of financial support</value>
+  </data>
+  <data name="AcademicTranscriptsAndCertificates" xml:space="preserve">
+    <value>Academic transcripts and certificates</value>
+  </data>
+  <data name="MedicalExaminationReport" xml:space="preserve">
+    <value>Medical examination report</value>
+  </data>
+  <data name="StudentInsurance" xml:space="preserve">
+    <value>Student insurance coverage</value>
+  </data>
+  <data name="JobOfferLetter" xml:space="preserve">
+    <value>Job offer letter from Turkish employer</value>
+  </data>
+  <data name="WorkPermit" xml:space="preserve">
+    <value>Work permit</value>
+  </data>
+  <data name="EducationalAndProfessionalCertificates" xml:space="preserve">
+    <value>Educational and professional certificates</value>
+  </data>
+  <data name="EmploymentContract" xml:space="preserve">
+    <value>Employment contract</value>
+  </data>
+  <data name="ConfirmedOnwardTicket" xml:space="preserve">
+    <value>Confirmed onward ticket</value>
+  </data>
+  <data name="TransitItinerary" xml:space="preserve">
+    <value>Transit itinerary</value>
+  </data>
+  <data name="VisaForFinalDestination" xml:space="preserve">
+    <value>Visa for final destination (if required)</value>
+  </data>
+  <data name="InvitationLetterFromFamilyMember" xml:space="preserve">
+    <value>Invitation letter from family member</value>
+  </data>
+  <data name="ProofOfRelationship" xml:space="preserve">
+    <value>Proof of relationship</value>
+  </data>
+  <data name="SponsorDocumentsAndFinancialProof" xml:space="preserve">
+    <value>Sponsor's documents and financial proof</value>
+  </data>
+  <data name="FamilyPhotographs" xml:space="preserve">
+    <value>Family photographs</value>
+  </data>
+  <data name="AccommodationArrangements" xml:space="preserve">
+    <value>Accommodation arrangements</value>
+  </data>
+  
+  <!-- Services -->
+  <data name="ServiceTurkeyVisaApplication" xml:space="preserve">
+    <value>Turkey Visa Application Processing</value>
+  </data>
+  <data name="ServiceTurkeyVisaApplicationDesc" xml:space="preserve">
+    <value>Complete visa application processing for all visa types</value>
+  </data>
+  <data name="ServiceDocumentTranslation" xml:space="preserve">
+    <value>Document Translation</value>
+  </data>
+  <data name="ServiceDocumentTranslationDesc" xml:space="preserve">
+    <value>Official translation of documents by sworn translators</value>
+  </data>
+  <data name="ServiceLegalConsultation" xml:space="preserve">
+    <value>Legal Consultation</value>
+  </data>
+  <data name="ServiceLegalConsultationDesc" xml:space="preserve">
+    <value>Expert legal advice on immigration and visa matters</value>
+  </data>
+  <data name="ServiceAppointmentScheduling" xml:space="preserve">
+    <value>Appointment Scheduling</value>
+  </data>
+  <data name="ServiceAppointmentSchedulingDesc" xml:space="preserve">
+    <value>Book appointments for consulate interviews and consultations</value>
+  </data>
+  <data name="ServiceExpressProcessing" xml:space="preserve">
+    <value>Express Processing</value>
+  </data>
+  <data name="ServiceExpressProcessingDesc" xml:space="preserve">
+    <value>Fast-track visa processing for urgent applications</value>
+  </data>
+  <data name="ServiceDocumentReview" xml:space="preserve">
+    <value>Document Review</value>
+  </data>
+  <data name="ServiceDocumentReviewDesc" xml:space="preserve">
+    <value>Comprehensive review of your application documents</value>
+  </data>
+  <data name="PriceFrom60" xml:space="preserve">
+    <value>From ₺60</value>
+  </data>
+  <data name="PriceFrom25PerPage" xml:space="preserve">
+    <value>From ₺25/page</value>
+  </data>
+  <data name="PriceFrom150PerHour" xml:space="preserve">
+    <value>From ₺150/hour</value>
+  </data>
+  <data name="PriceFree" xml:space="preserve">
+    <value>Free</value>
+  </data>
+  <data name="PriceAdditional100" xml:space="preserve">
+    <value>Additional ₺100</value>
+  </data>
+  <data name="PriceFrom40" xml:space="preserve">
+    <value>From ₺40</value>
+  </data>
+  
+  <!-- FAQ Questions -->
+  <data name="FAQProcessingTimeQuestion" xml:space="preserve">
+    <value>How long does Turkey visa processing take?</value>
+  </data>
+  <data name="FAQProcessingTimeAnswer" xml:space="preserve">
+    <value>Processing times vary by visa type: Tourist visas take 5-10 business days, Business visas take 3-7 business days, Student visas take 10-15 business days, and Work visas take 15-20 business days.</value>
+  </data>
+  <data name="FAQTouristRequirementsQuestion" xml:space="preserve">
+    <value>What documents do I need for a tourist visa?</value>
+  </data>
+  <data name="FAQTouristRequirementsAnswer" xml:space="preserve">
+    <value>You need a valid passport (6+ months validity), 2 passport photos, travel itinerary, hotel bookings, bank statements (last 3 months), and travel insurance.</value>
+  </data>
+  <data name="FAQTrackingQuestion" xml:space="preserve">
+    <value>Can I track my visa application?</value>
+  </data>
+  <data name="FAQTrackingAnswer" xml:space="preserve">
+    <value>Yes, you can track your application using the application ID provided when you submitted your application. Use our online tracking system.</value>
+  </data>
+  <data name="FAQRejectionQuestion" xml:space="preserve">
+    <value>What if my visa application is rejected?</value>
+  </data>
+  <data name="FAQRejectionAnswer" xml:space="preserve">
+    <value>If rejected, you'll receive a detailed explanation. You can reapply after addressing the issues mentioned in the rejection letter. Fees may apply for reapplication.</value>
+  </data>
+  <data name="FAQAppointmentQuestion" xml:space="preserve">
+    <value>Do I need an appointment for visa submission?</value>
+  </data>
+  <data name="FAQAppointmentAnswer" xml:space="preserve">
+    <value>While walk-ins are accepted, we highly recommend booking an appointment to avoid waiting times and ensure personalized service.</value>
+  </data>
+  <data name="FAQPaymentQuestion" xml:space="preserve">
+    <value>What payment methods do you accept?</value>
+  </data>
+  <data name="FAQPaymentAnswer" xml:space="preserve">
+    <value>We accept cash, credit cards, debit cards, and bank transfers. All fees must be paid before application processing begins.</value>
+  </data>
+  <data name="FAQAuthorizationQuestion" xml:space="preserve">
+    <value>Can someone else submit my application?</value>
+  </data>
+  <data name="FAQAuthorizationAnswer" xml:space="preserve">
+    <value>Yes, you can authorize someone to submit on your behalf with a signed authorization letter and copy of your ID.</value>
+  </data>
+  <data name="FAQValidityQuestion" xml:space="preserve">
+    <value>What is the validity of different visa types?</value>
+  </data>
+  <data name="FAQValidityAnswer" xml:space="preserve">
+    <value>Tourist visas are typically valid for 30-90 days, Business visas for 30-180 days, Student visas for the course duration, and Work visas vary by contract.</value>
+  </data>
+  
+  <!-- FAQ Categories -->
+  <data name="CategoryProcessing" xml:space="preserve">
+    <value>Processing</value>
+  </data>
+  <data name="CategoryRequirements" xml:space="preserve">
+    <value>Requirements</value>
+  </data>
+  <data name="CategoryTracking" xml:space="preserve">
+    <value>Tracking</value>
+  </data>
+  <data name="CategoryRejection" xml:space="preserve">
+    <value>Rejection</value>
+  </data>
+  <data name="CategoryAppointments" xml:space="preserve">
+    <value>Appointments</value>
+  </data>
+  <data name="CategoryPayment" xml:space="preserve">
+    <value>Payment</value>
+  </data>
+  <data name="CategorySubmission" xml:space="preserve">
+    <value>Submission</value>
+  </data>
+  <data name="CategoryValidity" xml:space="preserve">
+    <value>Validity</value>
+  </data>
+  
+  <!-- Services Page -->
+  <data name="OurProfessionalServices" xml:space="preserve">
+    <value>Our Professional Services</value>
+  </data>
+  <data name="ComprehensiveSolutions" xml:space="preserve">
+    <value>Comprehensive solutions for all your visa and immigration needs</value>
+  </data>
+  <data name="LearnMore" xml:space="preserve">
+    <value>Learn More</value>
+  </data>
+  <data name="WhyChooseOurServices" xml:space="preserve">
+    <value>Why Choose Our Services?</value>
+  </data>
+  <data name="ExcellenceInService" xml:space="preserve">
+    <value>We provide excellence in every aspect of our service delivery</value>
+  </data>
+  <data name="ExpertTeam" xml:space="preserve">
+    <value>Expert Team</value>
+  </data>
+  
+  <!-- FAQ Page -->
+  <data name="FrequentlyAskedQuestions" xml:space="preserve">
+    <value>Frequently Asked Questions</value>
+  </data>
+  <data name="FindAnswersToCommonQuestions" xml:space="preserve">
+    <value>Find answers to common questions about our visa services</value>
+  </data>
+  <data name="AllQuestions" xml:space="preserve">
+    <value>All Questions</value>
   </data>
 </root>

@@ -88,11 +88,47 @@ namespace VisaOffice.Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Academic transcripts and certificates.
+        /// </summary>
+        public static string AcademicTranscriptsAndCertificates {
+            get {
+                return ResourceManager.GetString("AcademicTranscriptsAndCertificates", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Acceptance letter from Turkish university.
+        /// </summary>
+        public static string AcceptanceLetterFromUniversity {
+            get {
+                return ResourceManager.GetString("AcceptanceLetterFromUniversity", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Accommodation arrangements.
+        /// </summary>
+        public static string AccommodationArrangements {
+            get {
+                return ResourceManager.GetString("AccommodationArrangements", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Address.
         /// </summary>
         public static string Address {
             get {
                 return ResourceManager.GetString("Address", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to All Questions.
+        /// </summary>
+        public static string AllQuestions {
+            get {
+                return ResourceManager.GetString("AllQuestions", resourceCulture);
             }
         }
         
@@ -205,6 +241,15 @@ namespace VisaOffice.Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Bank statements (last 3 months).
+        /// </summary>
+        public static string BankStatements {
+            get {
+                return ResourceManager.GetString("BankStatements", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Book Appointment.
         /// </summary>
         public static string BookAppointment {
@@ -219,6 +264,24 @@ namespace VisaOffice.Localization {
         public static string BrandName {
             get {
                 return ResourceManager.GetString("BrandName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Business invitation letter from Turkish company.
+        /// </summary>
+        public static string BusinessInvitationLetter {
+            get {
+                return ResourceManager.GetString("BusinessInvitationLetter", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Business travel insurance.
+        /// </summary>
+        public static string BusinessTravelInsurance {
+            get {
+                return ResourceManager.GetString("BusinessTravelInsurance", resourceCulture);
             }
         }
         
@@ -241,6 +304,78 @@ namespace VisaOffice.Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Appointments.
+        /// </summary>
+        public static string CategoryAppointments {
+            get {
+                return ResourceManager.GetString("CategoryAppointments", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Payment.
+        /// </summary>
+        public static string CategoryPayment {
+            get {
+                return ResourceManager.GetString("CategoryPayment", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Processing.
+        /// </summary>
+        public static string CategoryProcessing {
+            get {
+                return ResourceManager.GetString("CategoryProcessing", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Rejection.
+        /// </summary>
+        public static string CategoryRejection {
+            get {
+                return ResourceManager.GetString("CategoryRejection", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Requirements.
+        /// </summary>
+        public static string CategoryRequirements {
+            get {
+                return ResourceManager.GetString("CategoryRequirements", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Submission.
+        /// </summary>
+        public static string CategorySubmission {
+            get {
+                return ResourceManager.GetString("CategorySubmission", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Tracking.
+        /// </summary>
+        public static string CategoryTracking {
+            get {
+                return ResourceManager.GetString("CategoryTracking", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Validity.
+        /// </summary>
+        public static string CategoryValidity {
+            get {
+                return ResourceManager.GetString("CategoryValidity", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Choose from our wide range of visa services.
         /// </summary>
         public static string ChooseFromWideRange {
@@ -259,11 +394,29 @@ namespace VisaOffice.Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Company registration documents.
+        /// </summary>
+        public static string CompanyRegistrationDocuments {
+            get {
+                return ResourceManager.GetString("CompanyRegistrationDocuments", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Complete your visa application form below.
         /// </summary>
         public static string CompleteYourVisaApplication {
             get {
                 return ResourceManager.GetString("CompleteYourVisaApplication", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Comprehensive solutions for all your visa and immigration needs.
+        /// </summary>
+        public static string ComprehensiveSolutions {
+            get {
+                return ResourceManager.GetString("ComprehensiveSolutions", resourceCulture);
             }
         }
         
@@ -286,6 +439,15 @@ namespace VisaOffice.Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Confirmed onward ticket.
+        /// </summary>
+        public static string ConfirmedOnwardTicket {
+            get {
+                return ResourceManager.GetString("ConfirmedOnwardTicket", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Contact.
         /// </summary>
         public static string Contact {
@@ -300,6 +462,15 @@ namespace VisaOffice.Localization {
         public static string ContactInfo {
             get {
                 return ResourceManager.GetString("ContactInfo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Thank you for your message. We will get back to you soon!.
+        /// </summary>
+        public static string ContactMessageThankYou {
+            get {
+                return ResourceManager.GetString("ContactMessageThankYou", resourceCulture);
             }
         }
         
@@ -349,6 +520,15 @@ namespace VisaOffice.Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Educational and professional certificates.
+        /// </summary>
+        public static string EducationalAndProfessionalCertificates {
+            get {
+                return ResourceManager.GetString("EducationalAndProfessionalCertificates", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Email.
         /// </summary>
         public static string Email {
@@ -358,11 +538,29 @@ namespace VisaOffice.Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Employment contract.
+        /// </summary>
+        public static string EmploymentContract {
+            get {
+                return ResourceManager.GetString("EmploymentContract", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to English.
         /// </summary>
         public static string English {
             get {
                 return ResourceManager.GetString("English", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to We provide excellence in every aspect of our service delivery.
+        /// </summary>
+        public static string ExcellenceInService {
+            get {
+                return ResourceManager.GetString("ExcellenceInService", resourceCulture);
             }
         }
         
@@ -403,6 +601,24 @@ namespace VisaOffice.Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Expert Team.
+        /// </summary>
+        public static string ExpertTeam {
+            get {
+                return ResourceManager.GetString("ExpertTeam", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Family photographs.
+        /// </summary>
+        public static string FamilyPhotographs {
+            get {
+                return ResourceManager.GetString("FamilyPhotographs", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Turkey Family Reunification Visa.
         /// </summary>
         public static string FamilyVisa {
@@ -426,6 +642,150 @@ namespace VisaOffice.Localization {
         public static string FAQ {
             get {
                 return ResourceManager.GetString("FAQ", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to While walk-ins are accepted, we highly recommend booking an appointment to avoid waiting times and ensure personalized service..
+        /// </summary>
+        public static string FAQAppointmentAnswer {
+            get {
+                return ResourceManager.GetString("FAQAppointmentAnswer", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Do I need an appointment for visa submission?.
+        /// </summary>
+        public static string FAQAppointmentQuestion {
+            get {
+                return ResourceManager.GetString("FAQAppointmentQuestion", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Yes, you can authorize someone to submit on your behalf with a signed authorization letter and copy of your ID..
+        /// </summary>
+        public static string FAQAuthorizationAnswer {
+            get {
+                return ResourceManager.GetString("FAQAuthorizationAnswer", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Can someone else submit my application?.
+        /// </summary>
+        public static string FAQAuthorizationQuestion {
+            get {
+                return ResourceManager.GetString("FAQAuthorizationQuestion", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to We accept cash, credit cards, debit cards, and bank transfers. All fees must be paid before application processing begins..
+        /// </summary>
+        public static string FAQPaymentAnswer {
+            get {
+                return ResourceManager.GetString("FAQPaymentAnswer", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to What payment methods do you accept?.
+        /// </summary>
+        public static string FAQPaymentQuestion {
+            get {
+                return ResourceManager.GetString("FAQPaymentQuestion", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Processing times vary by visa type: Tourist visas take 5-10 business days, Business visas take 3-7 business days, Student visas take 10-15 business days, and Work visas take 15-20 business days..
+        /// </summary>
+        public static string FAQProcessingTimeAnswer {
+            get {
+                return ResourceManager.GetString("FAQProcessingTimeAnswer", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to How long does Turkey visa processing take?.
+        /// </summary>
+        public static string FAQProcessingTimeQuestion {
+            get {
+                return ResourceManager.GetString("FAQProcessingTimeQuestion", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to If rejected, you&apos;ll receive a detailed explanation. You can reapply after addressing the issues mentioned in the rejection letter. Fees may apply for reapplication..
+        /// </summary>
+        public static string FAQRejectionAnswer {
+            get {
+                return ResourceManager.GetString("FAQRejectionAnswer", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to What if my visa application is rejected?.
+        /// </summary>
+        public static string FAQRejectionQuestion {
+            get {
+                return ResourceManager.GetString("FAQRejectionQuestion", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to You need a valid passport (6+ months validity), 2 passport photos, travel itinerary, hotel bookings, bank statements (last 3 months), and travel insurance..
+        /// </summary>
+        public static string FAQTouristRequirementsAnswer {
+            get {
+                return ResourceManager.GetString("FAQTouristRequirementsAnswer", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to What documents do I need for a tourist visa?.
+        /// </summary>
+        public static string FAQTouristRequirementsQuestion {
+            get {
+                return ResourceManager.GetString("FAQTouristRequirementsQuestion", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Yes, you can track your application using the application ID provided when you submitted your application. Use our online tracking system..
+        /// </summary>
+        public static string FAQTrackingAnswer {
+            get {
+                return ResourceManager.GetString("FAQTrackingAnswer", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Can I track my visa application?.
+        /// </summary>
+        public static string FAQTrackingQuestion {
+            get {
+                return ResourceManager.GetString("FAQTrackingQuestion", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Tourist visas are typically valid for 30-90 days, Business visas for 30-180 days, Student visas for the course duration, and Work visas vary by contract..
+        /// </summary>
+        public static string FAQValidityAnswer {
+            get {
+                return ResourceManager.GetString("FAQValidityAnswer", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to What is the validity of different visa types?.
+        /// </summary>
+        public static string FAQValidityQuestion {
+            get {
+                return ResourceManager.GetString("FAQValidityQuestion", resourceCulture);
             }
         }
         
@@ -457,11 +817,38 @@ namespace VisaOffice.Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Financial statements.
+        /// </summary>
+        public static string FinancialStatements {
+            get {
+                return ResourceManager.GetString("FinancialStatements", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Find answers to common questions about our visa services.
+        /// </summary>
+        public static string FindAnswersToCommonQuestions {
+            get {
+                return ResourceManager.GetString("FindAnswersToCommonQuestions", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to First Name.
         /// </summary>
         public static string FirstName {
             get {
                 return ResourceManager.GetString("FirstName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Frequently Asked Questions.
+        /// </summary>
+        public static string FrequentlyAskedQuestions {
+            get {
+                return ResourceManager.GetString("FrequentlyAskedQuestions", resourceCulture);
             }
         }
         
@@ -520,6 +907,24 @@ namespace VisaOffice.Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Hotel reservation.
+        /// </summary>
+        public static string HotelReservation {
+            get {
+                return ResourceManager.GetString("HotelReservation", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Invitation letter from family member.
+        /// </summary>
+        public static string InvitationLetterFromFamilyMember {
+            get {
+                return ResourceManager.GetString("InvitationLetterFromFamilyMember", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Alsancak, Konak, İzmir 35220.
         /// </summary>
         public static string IzmirOfficeAddress {
@@ -556,11 +961,29 @@ namespace VisaOffice.Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Job offer letter from Turkish employer.
+        /// </summary>
+        public static string JobOfferLetter {
+            get {
+                return ResourceManager.GetString("JobOfferLetter", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Last Name.
         /// </summary>
         public static string LastName {
             get {
                 return ResourceManager.GetString("LastName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Learn More.
+        /// </summary>
+        public static string LearnMore {
+            get {
+                return ResourceManager.GetString("LearnMore", resourceCulture);
             }
         }
         
@@ -619,6 +1042,15 @@ namespace VisaOffice.Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Medical examination report.
+        /// </summary>
+        public static string MedicalExaminationReport {
+            get {
+                return ResourceManager.GetString("MedicalExaminationReport", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Message.
         /// </summary>
         public static string Message {
@@ -673,11 +1105,29 @@ namespace VisaOffice.Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Our Professional Services.
+        /// </summary>
+        public static string OurProfessionalServices {
+            get {
+                return ResourceManager.GetString("OurProfessionalServices", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Passport Number.
         /// </summary>
         public static string PassportNumber {
             get {
                 return ResourceManager.GetString("PassportNumber", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 2 passport photos.
+        /// </summary>
+        public static string PassportPhotos {
+            get {
+                return ResourceManager.GetString("PassportPhotos", resourceCulture);
             }
         }
         
@@ -736,6 +1186,60 @@ namespace VisaOffice.Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Additional ₺100.
+        /// </summary>
+        public static string PriceAdditional100 {
+            get {
+                return ResourceManager.GetString("PriceAdditional100", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Free.
+        /// </summary>
+        public static string PriceFree {
+            get {
+                return ResourceManager.GetString("PriceFree", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to From ₺150/hour.
+        /// </summary>
+        public static string PriceFrom150PerHour {
+            get {
+                return ResourceManager.GetString("PriceFrom150PerHour", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to From ₺25/page.
+        /// </summary>
+        public static string PriceFrom25PerPage {
+            get {
+                return ResourceManager.GetString("PriceFrom25PerPage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to From ₺40.
+        /// </summary>
+        public static string PriceFrom40 {
+            get {
+                return ResourceManager.GetString("PriceFrom40", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to From ₺60.
+        /// </summary>
+        public static string PriceFrom60 {
+            get {
+                return ResourceManager.GetString("PriceFrom60", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Privacy Policy.
         /// </summary>
         public static string PrivacyPolicy {
@@ -745,11 +1249,92 @@ namespace VisaOffice.Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to 10-15 business days.
+        /// </summary>
+        public static string ProcessingTime_10_15_BusinessDays {
+            get {
+                return ResourceManager.GetString("ProcessingTime_10_15_BusinessDays", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 15-20 business days.
+        /// </summary>
+        public static string ProcessingTime_15_20_BusinessDays {
+            get {
+                return ResourceManager.GetString("ProcessingTime_15_20_BusinessDays", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 2-5 business days.
+        /// </summary>
+        public static string ProcessingTime_2_5_BusinessDays {
+            get {
+                return ResourceManager.GetString("ProcessingTime_2_5_BusinessDays", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 3-7 business days.
+        /// </summary>
+        public static string ProcessingTime_3_7_BusinessDays {
+            get {
+                return ResourceManager.GetString("ProcessingTime_3_7_BusinessDays", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 5-10 business days.
+        /// </summary>
+        public static string ProcessingTime_5_10_BusinessDays {
+            get {
+                return ResourceManager.GetString("ProcessingTime_5_10_BusinessDays", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 7-12 business days.
+        /// </summary>
+        public static string ProcessingTime_7_12_BusinessDays {
+            get {
+                return ResourceManager.GetString("ProcessingTime_7_12_BusinessDays", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Professional Visa Services for Turkey.
         /// </summary>
         public static string ProfessionalVisaServices {
             get {
                 return ResourceManager.GetString("ProfessionalVisaServices", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Proof of financial support.
+        /// </summary>
+        public static string ProofOfFinancialSupport {
+            get {
+                return ResourceManager.GetString("ProofOfFinancialSupport", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Proof of relationship.
+        /// </summary>
+        public static string ProofOfRelationship {
+            get {
+                return ResourceManager.GetString("ProofOfRelationship", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Purpose of visit documentation.
+        /// </summary>
+        public static string PurposeOfVisitDocumentation {
+            get {
+                return ResourceManager.GetString("PurposeOfVisitDocumentation", resourceCulture);
             }
         }
         
@@ -826,11 +1411,137 @@ namespace VisaOffice.Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Appointment Scheduling.
+        /// </summary>
+        public static string ServiceAppointmentScheduling {
+            get {
+                return ResourceManager.GetString("ServiceAppointmentScheduling", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Book appointments for consulate interviews and consultations.
+        /// </summary>
+        public static string ServiceAppointmentSchedulingDesc {
+            get {
+                return ResourceManager.GetString("ServiceAppointmentSchedulingDesc", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Document Review.
+        /// </summary>
+        public static string ServiceDocumentReview {
+            get {
+                return ResourceManager.GetString("ServiceDocumentReview", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Comprehensive review of your application documents.
+        /// </summary>
+        public static string ServiceDocumentReviewDesc {
+            get {
+                return ResourceManager.GetString("ServiceDocumentReviewDesc", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Document Translation.
+        /// </summary>
+        public static string ServiceDocumentTranslation {
+            get {
+                return ResourceManager.GetString("ServiceDocumentTranslation", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Official translation of documents by sworn translators.
+        /// </summary>
+        public static string ServiceDocumentTranslationDesc {
+            get {
+                return ResourceManager.GetString("ServiceDocumentTranslationDesc", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Express Processing.
+        /// </summary>
+        public static string ServiceExpressProcessing {
+            get {
+                return ResourceManager.GetString("ServiceExpressProcessing", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Fast-track visa processing for urgent applications.
+        /// </summary>
+        public static string ServiceExpressProcessingDesc {
+            get {
+                return ResourceManager.GetString("ServiceExpressProcessingDesc", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Legal Consultation.
+        /// </summary>
+        public static string ServiceLegalConsultation {
+            get {
+                return ResourceManager.GetString("ServiceLegalConsultation", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Expert legal advice on immigration and visa matters.
+        /// </summary>
+        public static string ServiceLegalConsultationDesc {
+            get {
+                return ResourceManager.GetString("ServiceLegalConsultationDesc", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Services.
         /// </summary>
         public static string Services {
             get {
                 return ResourceManager.GetString("Services", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Turkey Visa Application Processing.
+        /// </summary>
+        public static string ServiceTurkeyVisaApplication {
+            get {
+                return ResourceManager.GetString("ServiceTurkeyVisaApplication", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Complete visa application processing for all visa types.
+        /// </summary>
+        public static string ServiceTurkeyVisaApplicationDesc {
+            get {
+                return ResourceManager.GetString("ServiceTurkeyVisaApplicationDesc", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sponsor&apos;s documents and financial proof.
+        /// </summary>
+        public static string SponsorDocumentsAndFinancialProof {
+            get {
+                return ResourceManager.GetString("SponsorDocumentsAndFinancialProof", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Student insurance coverage.
+        /// </summary>
+        public static string StudentInsurance {
+            get {
+                return ResourceManager.GetString("StudentInsurance", resourceCulture);
             }
         }
         
@@ -925,6 +1636,15 @@ namespace VisaOffice.Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Transit itinerary.
+        /// </summary>
+        public static string TransitItinerary {
+            get {
+                return ResourceManager.GetString("TransitItinerary", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Turkey Transit Visa.
         /// </summary>
         public static string TransitVisa {
@@ -952,11 +1672,38 @@ namespace VisaOffice.Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Travel insurance.
+        /// </summary>
+        public static string TravelInsurance {
+            get {
+                return ResourceManager.GetString("TravelInsurance", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Travel itinerary.
+        /// </summary>
+        public static string TravelItinerary {
+            get {
+                return ResourceManager.GetString("TravelItinerary", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Turkish.
         /// </summary>
         public static string Turkish {
             get {
                 return ResourceManager.GetString("Turkish", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Valid passport (minimum 6 months validity).
+        /// </summary>
+        public static string ValidPassport {
+            get {
+                return ResourceManager.GetString("ValidPassport", resourceCulture);
             }
         }
         
@@ -975,6 +1722,15 @@ namespace VisaOffice.Localization {
         public static string VisaApplicationForm {
             get {
                 return ResourceManager.GetString("VisaApplicationForm", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Visa for final destination (if required).
+        /// </summary>
+        public static string VisaForFinalDestination {
+            get {
+                return ResourceManager.GetString("VisaForFinalDestination", resourceCulture);
             }
         }
         
@@ -1006,6 +1762,15 @@ namespace VisaOffice.Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Why Choose Our Services?.
+        /// </summary>
+        public static string WhyChooseOurServices {
+            get {
+                return ResourceManager.GetString("WhyChooseOurServices", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Why Choose Us.
         /// </summary>
         public static string WhyChooseUs {
@@ -1020,6 +1785,15 @@ namespace VisaOffice.Localization {
         public static string WorkingHours {
             get {
                 return ResourceManager.GetString("WorkingHours", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Work permit.
+        /// </summary>
+        public static string WorkPermit {
+            get {
+                return ResourceManager.GetString("WorkPermit", resourceCulture);
             }
         }
         

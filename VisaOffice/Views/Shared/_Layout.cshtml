@@ -24,24 +24,24 @@
                             <a class="nav-link" asp-controller="Home" asp-action="Index">
                                 <i class="fas fa-home me-1"></i>@Resources.Home
                             </a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-nowrap" href="#" id="visaDropdown" role="button" data-bs-toggle="dropdown">
-                                <i class="fas fa-passport me-1"></i>@Resources.VisaServices
+                        </li>                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-nowrap" href="#" id="allServicesDropdown" role="button" data-bs-toggle="dropdown">
+                                <i class="fas fa-briefcase me-1"></i>@Resources.Services
                             </a>
                             <ul class="dropdown-menu">
+                                <!-- Visa Services Section -->
+                                <li><h6 class="dropdown-header"><i class="fas fa-passport me-2"></i>@Resources.VisaServices</h6></li>
                                 <li><a class="dropdown-item" asp-controller="Visa" asp-action="Types">@Resources.VisaTypes</a></li>
                                 <li><a class="dropdown-item" asp-controller="Visa" asp-action="Apply">@Resources.ApplyForVisa</a></li>
                                 <li><a class="dropdown-item" asp-controller="Visa" asp-action="TrackApplication">@Resources.TrackApplication</a></li>
                                 <li><a class="dropdown-item" asp-controller="Visa" asp-action="Requirements">@Resources.Requirements</a></li>
                                 <li><a class="dropdown-item" asp-controller="Visa" asp-action="Fees">@Resources.Fees</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-nowrap" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown">
-                                <i class="fas fa-cogs me-1"></i>@Resources.Services
-                            </a>
-                            <ul class="dropdown-menu">
+                                
+                                <!-- Separator -->
+                                <li><hr class="dropdown-divider"></li>
+                                
+                                <!-- Other Services Section -->
+                                <li><h6 class="dropdown-header"><i class="fas fa-cogs me-2"></i>@Resources.AllServices</h6></li>
                                 <li><a class="dropdown-item" asp-controller="Services" asp-action="Index">@Resources.AllServices</a></li>
                                 <li><a class="dropdown-item" asp-controller="Services" asp-action="DocumentTranslation">@Resources.DocumentTranslation</a></li>
                                 <li><a class="dropdown-item" asp-controller="Services" asp-action="LegalConsultation">@Resources.LegalConsultation</a></li>

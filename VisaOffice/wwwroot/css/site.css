@@ -1,5 +1,6 @@
 html {
   font-size: 14px;
+  --navbar-height: 76px; /* CSS custom property for navbar height */
 }
 
 @media (min-width: 768px) {
@@ -22,6 +23,51 @@ body {
 }
 
 /* Custom Styles for Visa Office */
+/* Fixed Navbar on Scroll */
+.navbar {
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-fixed {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1030;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15);
+  animation: slideDown 0.3s ease-out;
+}
+
+.navbar-scrolled {
+  background-color: rgba(0, 123, 255, 0.96) !important;
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+}
+
+.body-offset {
+  padding-top: var(--navbar-height, 76px); /* Use CSS custom property with fallback */
+  transition: padding-top 0.3s ease-in-out;
+}
+
+/* Navbar slide down animation */
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 991.98px) {
+  :root {
+    --navbar-height: 56px; /* Smaller navbar height for mobile */
+  }
+}
+
 .hero-section {
   background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
   min-height: 60vh;

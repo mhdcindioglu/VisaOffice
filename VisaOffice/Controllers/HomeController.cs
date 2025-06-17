@@ -30,7 +30,7 @@ public class HomeController : BaseController
         {
             // In a real application, you would save this to a database
             // For now, we'll just show a success message
-            TempData["SuccessMessage"] = "Mesajınız için teşekkür ederiz. En kısa sürede size döneceğiz! / Thank you for your message. We will get back to you soon!";
+            TempData["SuccessMessage"] = Resources.ContactMessageThankYou;
             return RedirectToAction("Contact");
         }
         return View(message);
